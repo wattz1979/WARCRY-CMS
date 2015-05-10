@@ -1,0 +1,114 @@
+/* FORMS Fixes */
+
+
+	/* REGISTER */
+	form .row input[name='birthday[year]'] {
+		display: inline-block; 
+		min-width: 68px !important; 
+		width: 68px; 
+		float: right;
+		margin: 0 0 0 12px;
+		}
+	form .row input[name='birthday[day]'] {
+		display: inline-block; 
+		min-width: 38px !important; 
+		width: 38px; 
+		float: right;
+		margin: 0 0 0 12px;
+		}
+	#register-select-birthday-month {
+		display:inline-block; float:right; width: 140px;
+    	}
+	
+	/* STORE */
+	
+	#store-quality-select {
+		float:left;
+		width:221px;
+		margin: 26px 0 0 24px;
+		}
+		
+	#store-characters {
+		float:left !important;
+		margin: 19px 0 0 18px;
+		}
+		
+	.items-currency-list input[type='submit'] {
+		float:right;
+		margin: 16px 18px 0 18px;
+		}
+
+	/* STORE */
+		
+	#search-bar input[type='text'] {
+		width:360px;
+		margin:26px 0 0 25px;
+		float:left;
+		color:#6b675f;
+		}
+		#search-bar select {
+		float:left;
+		margin:26px 0 0 25px;
+		color:#3b3736;
+		}
+		#search-bar input[type='submit'] {
+		float:right;
+		margin:26px 25px 0 0 ;
+		padding:0 26px 0 26px;
+		}
+	
+	/* UNSTUCK */
+	
+	.select-charcater-s #character-select {
+		margin:26px 24px 0 0;
+		}
+	
+	.ust-submit input[type='submit'] {
+		margin: 26px 0 0 24px;
+		float:left;
+		}
+		
+	/* Select payment method */
+		
+	p.option-paypal {
+		display:block;
+		background:url(images/misc/paypal.png) no-repeat;
+		width:148px;height:52px;
+		margin:0;
+		top:1px; left:-15px;
+		}
+		.js-select-list-option p.option-paypal {
+		width:100px; height:32px;
+		background-size:100%;
+		top:0; left:0;
+		}
+	
+	p.option-moneybooks {
+		display:block;
+		background:url(images/misc/moneybookers.png) no-repeat;
+		width:148px;height:52px;
+		margin:0;
+		top:-2px; left:-15px;
+		}
+		.js-select-list-option p.option-moneybooks {
+		width:100px; height:32px;
+		background-size:100%;
+		top:0; left:0;
+		}
+	p.option-onebip {
+		display:block;
+		background:url(images/misc/onebip.png) no-repeat;
+		width:148px;height:52px;
+		margin:0;
+		top:-2px; left:-15px;
+		}
+		.js-select-list-option p.option-onebip {
+		width:100px; height:32px;
+		background-size:100%;
+		top:0; left:0;
+		}
+	
+	
+	
+	
+	

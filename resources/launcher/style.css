@@ -1,0 +1,236 @@
+/* Warcry WoW Launcher */
+
+	/* Fonts 
+	--------------------------------------------------*/
+		@font-face {
+		font-family:ntailu;
+		src:url(fonts/ntailu.ttf);
+		}
+		@font-face {
+		font-family:minionpro;
+		src:url(fonts/MinionPro-Regular.otf);
+		}
+		@font-face {
+		font-family:calibri;
+		src:url(fonts/calibri.ttf);
+		}
+	/*--------------------------------------------------
+	 Fonts End */
+
+BODY {
+	padding:0; margin:0;
+	color:#4c463c;
+	background:#000;
+	}
+	* { position:relative; margin:0; padding:0;}
+
+div.holder {
+	width:779px; height:376px;
+	background:url(images/background.jpg) no-repeat;
+	padding:0;
+	}
+	
+	/* ASIDE */
+	aside {
+		width:327px; height:auto;
+		float:right;
+		margin:28px 27px 0 0;
+		}
+	
+	/* News 
+	--------------------------------------------------*/
+	article#news {
+		width:327px; height:191px;
+		background:url(images/news-background.png) no-repeat;
+		text-shadow:1px 1px 0 rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.4);
+		margin:0 0 20px 0;
+		z-index:4;
+		}
+		
+	/* Revision
+	--------------------------------------------------*/
+	article#revision {
+		width:327px; height:68px;
+		background:url(images/rev-background.png) no-repeat;
+		z-index:3;
+		}
+		
+		article#revision div.icon {
+			float:left;
+			width:38px; height:38px;
+			background:url(images/rev-icon.png) no-repeat;
+			margin:19px 0 0 11px;
+			}
+			
+		article#revision div.revision {
+			font-family:calibri;
+			float:left;
+			width:255px;
+			margin:15px 0 0 17px;
+			text-shadow:1px 1px 0 rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.4);
+			}
+			article#revision div.revision h1 {
+				font-weight:normal;
+				font-size:11px;
+				color:#b59439;
+				}
+			article#revision div.revision h2 {
+				font-weight:normal;
+				font-size:11px;
+				color:#746a50;
+				}
+	
+	/*--------------------------------------------------
+	Revision */
+	
+	/* Message Bar
+	--------------------------------------------------*/
+	
+	div.msg-bar {
+		width:779px; height:52px;
+		position:absolute;
+		left:0; bottom:0;
+		z-index:2;
+		}
+		
+		div.msg-bar div.active-msg {
+			width:778px; height:52px;
+			background:url(images/open-msg-bar.png) no-repeat;
+			position:absolute;
+			bottom:0; left:0;
+			text-align:center;
+			}
+			div.msg-bar div.active-msg h1 {
+			font-family:calibri;
+			font-weight: normal;
+			font-size:15px;
+			color:#d2ad48;
+			margin:20px 0 0 0;
+			text-shadow:1px 1px 1px rgba(0,0,0,.8), 0 0 2px rgba(255,204,0,.4), 0 0 6px rgba(0,0,0,.4);
+			z-index:1;
+			}
+			
+			div.msg-bar div#overlay {
+				width:585px; height:11px;
+				background:url(images/msg-text-overlay.png) no-repeat;
+				position:absolute;
+				left:50%; top:26px;
+				margin:0 0 0 -292px;
+				z-index:2;
+				}
+				
+		div.msg-bar .no-msg {
+			width:778px; height:17px;
+			background:url(images/no-msg-bar.png) no-repeat;
+			margin:35px 0 0 0;
+			}
+		
+		/* INACTIVE */		
+		div.msg-bar div.active-msg.inactive {display:none;}
+		div.msg-bar .no-msg.inactive {display:none;}
+	
+	/*--------------------------------------------------
+	Message Bar */
+	
+	
+	/* FLASH Animation 
+	----------------------------------------------------*/
+	#flash_content {
+		width:779px; height:376px;
+		position:absolute;
+		top:0; left:0;
+		z-index:1;
+		}
+		
+		
+	/* Bluberry
+	----------------------------------------------------*/
+	
+	.blueberry { margin: 0 auto; }
+	.blueberry .slides {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		height:180px !important;
+		width:308px;
+		float:left;
+	}
+	.blueberry .slides li {
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		text-shadow:0 1px 1px rgba(0,0,0,.5), 0 0 4px rgba(0,0,0,.5);
+		width:308px; height:180px;
+		}
+		.blueberry .slides li img {
+			display: block;
+			width: 300px; height:67px;
+			margin:0 0 0 10px;
+			}
+		.blueberry .slides li h1 {
+			font-family:calibri;
+			letter-spacing:-1px;
+			font-size:16px;
+			color:#7a612c;
+			text-transform:none;
+			margin:19px 0 6px 17px;
+			font-weight:normal;
+			}
+			.blueberry .slides li h1 a {color:#b59439; text-transform:none; text-decoration:none;}
+			.blueberry .slides li h1 a:hover {color:#eac26f;}
+			
+		.blueberry .slides li h4 {
+			font-size:11px;
+			color:#464339;
+			margin:6px 0 6px 17px;
+			font-family:calibri;
+			}
+		.blueberry .slides li p {
+			font-size:12px;
+			color:#746a50;
+			margin:5px 0 0 17px;
+			font-family:calibri;
+			}
+		
+	.blueberry .slides li.active { display: block; position: relative; }
+	.blueberry .crop li img { width: auto; }
+	
+	.blueberry .pager {
+		width:9px; height:150px;
+		text-align: right;
+		position:absolute;
+		left:-13px;
+		margin:30px 0 0 0;
+		}
+		.blueberry .pager li { display: block; margin:0 0 6px 0;}
+		.blueberry .pager li a,
+		.blueberry .pager li a span {
+			display: block;
+			height:9px; width:9px;
+			}
+			.blueberry .pager li a {
+				-webkit-border-radius: 6px;
+			    -moz-border-radius: 6px;
+				border-radius: 6px;
+				}
+				.blueberry .pager li a span {
+				overflow: hidden;
+				background: #2f2d29;
+				text-indent: -9999px;
+				-webkit-border-radius: 2px;
+			    -moz-border-radius: 2px;
+				border-radius: 2px;
+				box-shadow:inset 0 1px 1px rgba(255,255,255,.1), 0 1px 1px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.5);
+				transition: all 200ms; -moz-transition: all 200ms; -webkit-transition: all 200ms; -o-transition: all 200ms;
+				}
+				.blueberry .pager li.active a span {background: #756754;}
+				.blueberry .pager li a:hover span {background: #d0af51;}
+		
+		
+		
+		
+		
+		
+		
+

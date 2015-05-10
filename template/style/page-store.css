@@ -1,0 +1,259 @@
+	/* Store
+	---------------------------------------------------------*/
+	
+	#search-bar {height:87px; margin:40px 0 0 0;}
+		
+		/* Results */
+		.search-results { width:843px;}
+		
+		.search-results-head {
+		width:843px; height:30px;
+		margin:25px 0 0 0;
+		box-shadow:inset 0 -1px 0 rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.02);
+		}
+		.search-results-head .title {
+		font-family: 'Ropa Sans', sans-serif;
+		font-size:18px;
+		color:#9d9687;
+		text-shadow: 0 2px 1px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,.2);
+		float:left;
+		}
+			
+	.items_results {
+		box-shadow:inset 0 -1px 0 rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.02);
+		padding: 0 0 20px 0;
+		}
+		.noresults {
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+			color: #9D9687;
+			padding: 5px;
+			margin-top: 18px;
+		}
+		
+		.items_results ul { list-style: none; width:865px; display: none; }
+			.items_results ul li { width:410px; height:75px; display:inline-block; margin:0 21px 22px 0;}
+			.items_results ul li div#item-cont {
+			display:block; 
+			width:410px; height:75px;
+			background:url(images/misc/grad_2.png) repeat-x top;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			margin:22px 0 0 0;
+			}
+			.items_results ul li div#item-cont .item-ico { 
+			    width:54px; height:54px; float:left;
+				margin: 10px 0 0 10px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				border-style:solid; border-width:1px;
+				box-shadow:inset 0 0 8px #000, 0 0 5px #000;
+				overflow:hidden;
+				}
+				.items_results ul li div#item-cont .item-ico a {
+				display:block; 
+				width:54px; height:54px;
+				box-shadow:inset 0 0 7px #000, inset 0 0 12px #000,inset 0 0 2px 1px #000;
+				background-size:100%;
+				padding:0; margin:0;
+				}
+			
+			.items_results ul li div#item-cont .item-info {
+				float:left;
+				margin:9px 0 0 11px;
+				text-shadow: 0 0 5px #000;
+				}
+				.items_results ul li div#item-cont p {
+				font-family: 'Ropa Sans', sans-serif;
+				color:#959086;
+				font-size:17px;
+				font-weight:500;
+				text-shadow: 0 0 5px #000;
+				}
+				.items_results ul li div#item-cont span {
+				display:block;
+				font-size:11px; 
+				padding:0 0 6px 0;
+				color:#403d37;
+				box-shadow:inset 0 -1px 0 rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.02);
+				width:321px;
+				margin:-11px 0 0 0;
+				}
+				.items_results ul li div#item-cont .item-price-coins { left:-2px; color:#77746f; margin:-2px 0 0 0;}
+				.items_results ul li div#item-cont .item-price-coins span { display:inline-block; padding:0 7px 0 9px; box-shadow: none; width:4px;}
+				.items_results ul li div#item-cont:hover {
+					background:url(images/misc/grad_light_2.png) repeat-x bottom;
+					box-shadow: 0 3px 4px rgba(0,0,0,.25), inset 0 -1px 0 rgba(255,255,255,.04);
+					}
+				
+				.item-price-coins .g-coin, .item-price-coins .s-coin {
+					width:21px; height:20px;
+					display:inline-block;
+					margin:0 0 0 0;
+					top:5px;
+					}
+					.item-price-coins .g-coin {background-position:-814px 0;}
+					.item-price-coins .s-coin {background-position:-835px 0;}
+
+		.desc-head {
+			width:843px; height:50px;
+			text-shadow: 0 0 5px #000;
+			margin:22px 0 -20px 0;
+			}
+			.desc-head .title {
+			font-family: 'Ropa Sans', sans-serif;
+			font-size:18px;
+			color:#9d9687;
+			text-shadow: 0 2px 1px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,.2);
+			}
+			.desc-head .desc {
+			display:block;
+			color:#3a3938;
+			font-size:11px;
+			left:-1px;
+			}
+		.list-coins {
+		width:843px; height:30px;
+		}
+		.list-coins .s-coin {float:right; margin:0 26px 0 0;}
+		.list-coins .g-coin {float:right; margin:0 90px 0 0;}
+		.list-coins .empty-cart { display: inline-block; float: right; margin: 4px -148px 0 0;}
+		
+		#store-shopping-cart p {
+			font-size: 14px;
+			font-weight: bold;
+			color: #9D9687;
+			padding: 12px 0 0 0;
+		}
+		#store-price-gold {
+			padding: 0 2px 0 0 !important;
+			width: auto !important;
+			text-align: left;
+			vertical-align:bottom;
+		}
+		#store-price-silver {
+			padding: 0 2px 0 0 !important;
+			width: auto !important;
+			text-align: left;
+			vertical-align:bottom;
+		}
+		.items-currency-list #store-total-amount {
+			}
+			.items-currency-list #store-total-amount div {
+				display: inline-block !important;
+				position: relative !important;
+				float:none !important;
+				margin: auto;
+			}
+			.items-currency-list #store-total-amount #store-total-silver, .items-currency-list #store-total-amount #store-total-gold {
+				margin-left: -4px;
+				margin-right: 4px;
+			}
+			
+		.selected-item-row {
+			list-style:none;
+			width:100%; height:42px;
+			display:block;
+			box-shadow:0 -1px 0 rgba(0,0,0,.7), 0 -2px 0 rgba(255,255,255,.03);
+			padding:0;
+			display:both;
+			}
+			.selected-item-row:first-child {
+				height:44px;
+				box-shadow: none;
+			}
+			.selected-item-row li { display:block; float:left;}
+			
+			.selected-item-row li.sitem-icon {float:left; height:42px; padding:0 8px 0 0;}
+			.selected-item-row li.sitem-icon span {
+				width:27px; height:27px; float:left;
+				margin: 7px 0 0 7px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				border-style:solid; border-width:1px;
+				box-shadow:inset 0 0 8px #000, 0 0 5px #000;
+				overflow:hidden;
+				background-size:100%;
+				}
+			
+			.selected-item-row li.sitem-name {
+				float:left;
+				width:618px; height:30px;
+				font-family: 'Ropa Sans', sans-serif;
+				color:#959086;
+				font-size:17px;
+				font-weight:500;
+				text-shadow: 0 0 5px #000;
+				text-align:left;
+				padding:12px 0 0 12px;
+				box-shadow:-1px 0 0 rgba(255,255,255,.1), -2px 0 0 rgba(0,0,0,.7);
+				}
+			    .selected-item-row:first-child li.sitem-name {
+					padding: 14px 0 0 12px;
+			    }
+				
+			.selected-item-row li.sitem-s-coins, .selected-item-row li.sitem-g-coins {
+				float:left; 
+				height:42px; width:46px;
+				text-align:center;
+				box-shadow:-1px 0 0 rgba(255,255,255,.1), -2px 0 0 rgba(0,0,0,.7);
+				font-size:15px;
+				font-weight:bold;
+				}
+				.selected-item-row li.sitem-s-coins a, .selected-item-row li.sitem-g-coins a {
+				padding: 12px 0 0 0;
+				width:44px; height:29px;
+				display:block;
+				top:1px;
+				}
+				.selected-item-row li.sitem-g-coins a {color:#a37402;}
+				
+				.selected-item-row li.sitem-s-coins a:hover {color:#c8c8c8; background:rgba(255,255,255,.02);}
+				.selected-item-row li.sitem-g-coins a:hover { color:#ffcf0f; background:rgba(255,255,255,.02);}
+				
+				.selected-item-row li.sitem-s-coins a.active {
+				box-shadow:inset 0 0 6px rgba(255,255,255,.2), inset 0 0 0 1px rgba(255,255,255,.2), inset 0 0 50px rgba(255,255,255,.1), 0 0 8px rgba(0,0,0,.5);
+				color:#f5f5f5;
+				text-shadow:0 0 10px #000;
+				}
+				.selected-item-row li.sitem-g-coins a.active {
+				box-shadow:inset 0 0 6px rgba(225,179,43,.15), inset 0 0 0 1px #785f1a, inset 0 0 50px rgba(225,179,43,.1), 0 0 8px rgba(0,0,0,.5);
+				color:#e8c20f;
+				text-shadow:0 0 10px #000;
+				}
+				.selected-item-row li.sitem-s-coins .disabled {
+				color: #900;
+				line-height: 45px;
+				color: #130300;
+				text-shadow:0 1px 0 rgba(255,255,255,.04), 0 0 5px rgba(255,255,255,.05);
+				}
+				
+			.selected-item-row li.remove {
+				float:left;
+				height:42px;
+				box-shadow:-1px 0 0 rgba(255,255,255,.1), -2px 0 0 rgba(0,0,0,.7);
+				}
+				.selected-item-row li.remove a {
+				display:block;
+				padding:14px 5px 5px 15px;
+				font-weight:bold;
+				color:#130300;
+				text-shadow:0 1px 0 rgba(255,255,255,.04), 0 0 5px rgba(255,255,255,.05)
+				}
+				.selected-item-row li.remove a:hover {
+				color:#8b230e;
+				text-shadow:0 0 3px #000;
+				}
+				#store-complete-form-container .there-are-no-chars {
+					float: left;
+					font-size: 14px;
+					padding: 10px;
+					margin: 17px 0 0 15px;
+					color: #9D9687;
+					font-weight: bold;
+				}

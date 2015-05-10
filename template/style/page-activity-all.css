@@ -1,0 +1,73 @@
+/* ACTIVITY Pages 
+---------------------------------------------------------*/
+
+	.pagination-holder {
+	padding:15px 0 15px 0;
+	}
+	.pagination-holder .pagination {
+		margin: 0 15px 0 0;
+		}
+	
+	.coins-activity {}
+	.store-activity {}
+	.account-activity {}
+	
+		.activity-list  { margin:0; padding:0;}
+		.activity-list li {
+			display:block; 
+			width:770px; height:56px;
+			box-shadow:inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.05);
+			}
+			.activity-list li:last-child { box-shadow: none;}
+		.activity-list li p {
+			display:block;
+			float:left;
+			padding:20px 0 20px 0;
+			font-size:13px;
+			color:#4b4b44;
+			text-shadow:0 0 7px #000, 0 1px 0 rgba(0,0,0,.4);
+			}
+			.activity-list li p#r-title { 
+				width:45%; 
+				text-align:left;
+				}
+				.activity-list li p#r-title i {padding:0 5px 0 0;}
+				.activity-list li p#r-title b {color:#828278;}
+				
+			.activity-list li p#r-date { width:25%; color:#353530;}
+			.activity-list li p#ar-date {width:25%; color:#353530; text-align:right;}
+			.activity-list li p#r-info { width:30%; text-align:right;}
+			/* Coin Activity */
+			.activity-list li p#r-title2 { width:35%; text-align:left; }
+			.activity-list li p#r-date2 { width:25%; color:#353530;}
+			.activity-list li p#r-info2 { width:40%; text-align:right;}
+		
+			.activity-list li p#r-item {width:45%; text-align:left;}
+			.activity-list li p#r-item a {
+				font-size:12px;
+				font-weight: bold;
+				}
+				.activity-list li p#r-item a:hover { color:inherit;}
+		
+		/* there-is-nothing */
+		p.there-is-nothing {
+			font-size:16px;
+			font-style:italic;
+			font-weight: bold;
+			display:block;
+			padding:20px 0 20px 0;
+			color:#887d6b;
+			text-shadow:0 0 10px #000;
+			}
+		p.there-are-no-chars {
+			font-size:13px;
+			font-style:italic;
+			font-weight: bold;
+			display:block;
+			padding:34px 35px 20px 35px;
+			color:#887d6b;
+			text-shadow:0 0 10px #000;
+			}
+			p.armor-store-fix {
+				padding:9px 0 0 10px;
+			}

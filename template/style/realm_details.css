@@ -1,0 +1,395 @@
+
+.realm-details {
+	padding:0;
+	}
+
+/* REALM Name and Expansion */
+.realm_main_info {
+	width:996px; height:125px;
+	background:url(images/misc/realm_info_page_top_image.jpg) no-repeat;
+	border-radius:5px 5px 0 0;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.03);
+	}
+	
+	.realm_main_info #expansion {
+		position:absolute;
+		left:50%;
+		margin:-87px 0 0 -385px;
+		}
+		
+	.realm_main_info h1 {
+		float:left;
+		display:block;
+		text-align:left;
+		font-size:48px;
+		color:#e4efef;
+		letter-spacing:-2px;
+		text-shadow:0 0 16px rgba(0,0,0,.3), 3px 2px 0 rgba(0,0,0,.3);
+		margin:30px 0 0 38px;
+		}
+		.realm_main_info h1 .overlay_1 {
+			width:100%; height:64px;
+			background:url(images/misc/realm_info_text_overlay.png) no-repeat left;
+			position:absolute;
+			top:0; left:0;
+			z-index:1;
+			}
+		.realm_main_info h1 .overlay_2 {
+			width:173px; height:108px;
+			background:url(images/misc/realm_info_title_overlay.png) no-repeat;
+			position:absolute;
+			top:-20px; left:-28px;
+			z-index:2;
+			}
+		
+	.realm_main_info h2 {
+		float:right;
+		display:block;
+		text-align:right;
+		color:#ddeced;
+		font-size:21px;
+		letter-spacing:-1px;
+		margin:40px 40px 0 0;
+		text-shadow:0 0 16px rgba(0,0,0,.3), 3px 2px 0 rgba(0,0,0,.3);
+		}
+		.realm_main_info h2 div {
+		font-size:15px;
+		color:#686b6c;
+		font-weight: normal;
+		letter-spacing:0;
+		display:block;
+		z-index:3;
+		letter-spacing:-1px;
+		}
+		
+		.realm_main_info h2 .overlay_1 {
+			width:100%; height:64px;
+			background:url(images/misc/realm_info_text_overlay.png) no-repeat left;
+			position:absolute;
+			top:-30px; left:0;
+			z-index:1;
+			}
+			.realm_main_info h2 div .overlay_1 {
+			top:-35px; z-index:4;
+			}
+			
+		.realm_main_info h2 .overlay_2 {
+			width:385px; height:108px;
+			background:url(images/misc/realm_description_overlay.png) no-repeat;
+			position:absolute;
+			top:-36px; left:-33px;
+			z-index:5;
+			}
+
+/* Realm Status */
+
+.realm_staus_info {
+	width:996px; height:134px;
+	background:url(images/misc/realm_info_page_sec_image.jpg) no-repeat;
+	}
+	
+	.realm_staus_info .realm_status {
+		float:left;
+		margin:33px 0 0 40px;
+		}
+		.realm_status h1.status {
+			display:block;
+			text-align:left;
+			font-size:30px;
+			text-shadow:0 0 16px rgba(0,0,0,.3), 3px 2px 0 rgba(0,0,0,.3);
+			}
+			.realm_status h1.status.online { color:#587c2d;}
+			.realm_status h1.status.offline { color:#84341e;}
+			
+			.realm_status h1 .overlay_1 {
+			width:120%; height:42px;
+			background: url(images/misc/text_overlay.png) left;
+			position:absolute;
+			top:-7px; left:-25px;
+			z-index:1;
+			}
+			
+		.realm_status h2 {
+			color:#766c5f;
+			font-size:20px;
+			font-weight: normal;
+			text-shadow:0 0 16px rgba(0,0,0,.3), 2px 2px 0 rgba(0,0,0,.3);
+			}
+			.realm_status h2 .overlay_1 {
+			width:100%; height:42px;
+			background: url(images/misc/text_overlay.png);
+			position:absolute;
+			top:-8px; left:-25px;
+			z-index:1;
+			}
+	
+	.realm_online_players {
+		float:right;
+		text-align:right;
+		margin:30px 38px 0 0;
+		}
+	
+		.realm_online_players h1 {
+			font-size:41px;
+			color:#bfa98e;
+			letter-spacing:-2px;
+			text-shadow:0 0 16px rgba(0,0,0,.3), 2px 2px 0 rgba(0,0,0,.3);
+			}
+			.realm_online_players h1 p {
+				display:inline-block;
+				font-family:arialn;
+				margin:0 0 0 10px;
+				font-weight: normal;
+				color:#625546;
+				letter-spacing:0;
+				}
+			.realm_online_players h1 .overlay_1 {
+				width:100%; height:42px;
+				background: url(images/misc/text_overlay.png);
+				position:absolute;
+				top:5px; left:0;
+				z-index:1;
+				}
+		
+		.realm_online_players h2 {
+			color:#766c5f;
+			font-size:20px;
+			font-weight: normal;
+			text-shadow:0 0 16px rgba(0,0,0,.3), 2px 2px 0 rgba(0,0,0,.3);
+			top:-7px;
+			}
+			.realm_online_players h2 .overlay_1 {
+				width:100%; height:42px;
+				background: url(images/misc/text_overlay.png);
+				position:absolute;
+				top:5px; left:0;
+				z-index:1;
+				}
+
+/* Realm Info */
+
+.realm_info {
+	width:996px; height:300px;
+	background:url(images/misc/realm_info_page_lst_image.jpg) no-repeat;
+	}
+	
+	.realm_info span {
+		width:600px; height:auto;
+		display:block;
+		float:left;
+		text-align:left;
+		float:right;
+		margin:55px 50px 0 0;
+		text-shadow:0 0 16px rgba(0,0,0,.3), 2px 2px 0 rgba(0,0,0,.3);
+		}
+		
+		.realm_info span h1 {
+			color:#c88a30;
+			display:block;
+			width:100%;
+			font-size:24px;
+			margin: 0 0 28px 0;
+			}
+			.realm_info span h1 a {
+				float:right;
+				font-size:14px;
+				margin:7px 10px 0 10px;
+				font-style:italic;
+				color:#242826;
+				}
+				.realm_info span h1 a:hover { color:#c88a30;}
+		
+		.realm_info span h2 {
+			font-size:14px;
+			color:#655d52;
+			}
+			.realm_info span h2 a { color:#898074;}
+			.realm_info span h2 a:hover { color:#df9d34;}
+			
+
+/* REALM STATISTICS */
+
+.realm_statistics {
+	width:996px;
+	background:rgba(0,0,0,.3);
+	box-shadow:0 -1px 0 rgba(255,255,255,.02), inset 0 1px 1px rgba(0,0,0,.5);
+	}
+	
+	/* Seperator */
+	.stats-seperator {
+		width:2px; height:326px;
+		float:left;
+		background:rgba(0,0,0,.3);
+		margin:10px 0 0 0;
+		box-shadow:0 0 4px rgba(255,255,255,.03), 1px 1px 0 rgba(255,255,255,.01);
+		}
+	
+	.statistic_holder {
+		width:273px;
+		float:left;
+		padding:28px;
+		}
+		.statistic_holder h1.head_info {
+			line-height:100%;
+			text-align:left;
+			text-shadow:0 0 16px rgba(0,0,0,.3), 1px 1px 1px rgba(0,0,0,.3);
+			}
+			.statistic_holder h1.head_info p {
+				color:#c88a30;
+				font-size:18px;
+				font-family:calibrib;
+				font-weight: normal;
+				line-height:100%;
+				margin:0 0 5px 0;
+				}
+			.statistic_holder h1.head_info span {
+				font-family:calibrib;
+				font-size:14px;
+				color:#3c3731;
+				line-height:100%;
+				padding:0;
+				display:block;
+				}
+	
+	/* Faction Statistics */
+	
+	.alliance_horde_statistics {}
+		.faction_bars_case {
+			width:273px; height:200px;
+			}
+		
+		.faction_bars_case .faction_bar {
+			width:136px; height:auto; min-height:30%;
+			text-align:center;
+			position:absolute;
+			bottom:0;
+			}
+			.alliance_bar { background:url(images/misc/alliance_scale_bar.jpg) no-repeat top;}
+			.horde_bar { background:url(images/misc/horde_scale_bar.jpg) no-repeat top; left:137px;}
+			
+			.faction_bars_case .faction_bar .grad {
+				position:absolute;
+				width:136px; height:223px;
+				top:1px; left:0;
+				z-index:1;
+				background:url(images/misc/grad.png) no-repeat;
+				}
+			
+			.faction_bars_case .faction_bar h1 {
+				color:#b4aa9b;
+				font-size:42px;
+				letter-spacing:1px;
+				z-index:2;
+				font-family:calibrib;
+				margin:30px 0 0 0;
+				}
+			.faction_bars_case .faction_bar h2 {
+				z-index:2;
+				font-family:calibrib;
+				font-size:13px;
+				text-transform:uppercase;
+				color:#867c6f;
+				}
+			.faction_bars_case .faction_bar h3 {
+				z-index:2;
+				font-family:calibrib;
+				font-size:12px;
+				color:#7d766c;
+				line-height:40%;
+				}
+				
+	.all_characters {
+		width:273px; height:40px;
+		background:rgba(147,135,119,.1);
+		margin:1px 0 0 0;
+		box-shadow:0 1px 3px rgba(0,0,0,.5), inset 0 0 1px rgba(255,255,255,.01), inset 0 -20px 0 rgba(0,0,0,.1);
+		text-align:center;
+		}
+		.all_characters h1 {
+			font-family:calibrib;
+			color:#534d44; 
+			font-size:18px;
+			padding:6px 0 0 0;
+			}
+	
+
+	/* Race & Class Statistics */
+	
+	.race_class_stats {width:273px; margin:25px 0 0 0;}
+	
+	.race_class_stats .bar_row {
+		width:273px; height:20px;
+		margin:0 0 2px 0;
+		}
+		.race_class_stats .bar_row .scale {
+			width:auto; height:20px;
+			background:url(images/misc/scale_background.gif) repeat-x;
+			border-radius:0 3px 3px 0;
+			float:left;
+			box-shadow:0 0 3px rgba(0,0,0,.4), inset -1px 0 0 rgba(233,224,199,.08);
+			}
+			.race_class_stats .bar_row .scale .ico {
+			width:18px; height:18px;
+			border: solid 1px #63594a;
+			border-radius:2px;
+			box-shadow:inset 0 0 5px 2px rgba(0,0,0,.8), inset 0 0 1px 1px rgba(0,0,0,.8), 2px 0 0 rgba(0,0,0,.5);
+			float:left;
+			}
+			.race_class_stats .bar_row .scale span {
+				float:left;
+				margin:3px 0 0 5px;
+				font-family:calibrib;
+				color:#635b53;
+				text-shadow:0 0 3px rgba(0,0,0,.4), 1px 1px 1px rgba(0,0,0,.4);
+				}
+			
+		.race_class_stats .bar_row h1 {
+			float:left;
+			font-family:calibrib;
+			font-size:12px;
+			margin:3px 0 0 4px;
+			color:#6f665a;
+			text-shadow:0 0 3px rgba(0,0,0,.4), 1px 1px 1px rgba(0,0,0,.4);
+			}
+			.race_class_stats .bar_row h1 span { color:#3a352e;}
+		
+		.bar_row .scale.dk, .bar_row .scale.dr, .bar_row .scale.ht, .bar_row .scale.mg, .bar_row .scale.pl, .bar_row .scale.pr, .bar_row .scale.rg, 
+		.bar_row .scale.sh, .bar_row .scale.wl, .bar_row .scale.wr  {
+			background-image:url(images/misc/class_scale_background.gif);
+			background-repeat:repeat-x;
+			}
+			.bar_row .scale.dk {background-position:0 -180px;}
+			.bar_row .scale.dr {background-position:0 -160px;}
+			.bar_row .scale.ht {background-position:0 -140px;}
+			.bar_row .scale.mg {background-position:0 -120px;}
+			.bar_row .scale.pl {background-position:0 -100px;}
+			.bar_row .scale.pr {background-position:0 -80px;}
+			.bar_row .scale.rg {background-position:0 -60px;}
+			.bar_row .scale.sh {background-position:0 -40px;}
+			.bar_row .scale.wl {background-position:0 -20px;}
+			.bar_row .scale.wr {background-position:0 0;}
+			
+			
+			.statistics_note {
+				background:rgba(0,0,0,.2);
+				padding:20px 10px;
+				width:910px;
+				border-radius:8px;
+				box-shadow:inset 0 0 8px rgba(0,0,0,.4);
+				}
+				.statistics_note h3 {
+					font-size:12px;
+					font-family:calibrib;
+					color:#3a352e;
+					text-shadow:0 0 3px rgba(0,0,0,.4), 1px 1px 1px rgba(0,0,0,.4);
+					}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

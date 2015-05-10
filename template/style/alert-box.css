@@ -1,0 +1,60 @@
+.green {
+    box-shadow: 
+	0 0 4px rgba(0,0,0,.6), 0 1px 1px rgba(0,0,0,.5), inset 0 0 0 1px rgba(66,255,0,.1),
+	inset 0 0 28px 25px rgba(66,255,0,.05),inset 0 0 18px 0px rgba(66,255,0,.15);
+	color:#54a22c;
+	text-shadow: 0 1px 0 #000, 0 0 6px #000;
+	}
+	.red {
+	box-shadow: 
+	0 0 4px rgba(0,0,0,.6), 0 1px 1px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,66,0,.1),
+	inset 0 0 28px 25px rgba(255,66,0,.05),inset 0 0 18px 0px rgba(255,66,0,.15);
+	color:#a23535;
+	text-shadow: 0 1px 0 #000, 0 0 6px #000; 
+    }
+	.light_brown {
+	box-shadow: 
+	0 0 4px rgba(0,0,0,.6), 0 1px 1px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.05),
+	inset 0 0 28px 25px rgba(255,255,255,.03),inset 0 0 18px 0px rgba(255,255,255,.1);
+	color:#6c6c6c;
+	text-shadow: 0 1px 0 #000, 0 0 6px #000;
+	}
+	
+	.grlb-a-fix { display:block; width:99%; padding:0;}
+	
+	/* IF "a" hovers */
+		a.light_brown:hover {
+		box-shadow: 0 0 4px rgba(0,0,0,.6), 0 1px 1px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.05),
+		inset 0 0 28px 25px rgba(255,255,255,.03),inset 0 0 18px 0px rgba(255,255,255,.06);
+		}
+	
+	.green, .red, .light_brown { padding:0;}
+	
+	.wide { width:85%;}
+	.wider { width:100%;}
+	.error-holder {width:75%;}
+	
+	.green p, .red p, .light_brown p { 
+	font-size:12px; 
+	padding:0 12px 0 10px; 
+	display:inline-block; 
+	width: 90%; 
+	margin:13px 0 13px 0; 
+	vertical-align: top;
+	}
+	
+	/* Error Icons */
+	.error_icons {
+	background-image:url(images/misc/misc_main.png);
+	background-repeat:no-repeat;
+	background-color:transparent;
+	width: auto; height:28px;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0 0 0 8px;
+	top:6px;
+	}
+	
+	.atention {width:28px; background-position: -892px -0px;}
+	.success {width:28px; background-position: -920px -0px;}
+	.mail {width:30px; background-position: -948px -0px;}

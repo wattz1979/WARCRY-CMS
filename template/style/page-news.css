@@ -1,0 +1,111 @@
+/* NEWS 
+	---------------------------------------------------------*/
+	
+	.archived-news {
+		width:773px;
+		margin:27px 0 0 0;
+		padding:30px 35px 30px 35px;
+		}
+				
+		.archived-news .arnews-head {
+			color:#403f3e;
+			text-shadow: 0 0 4px rgba(0,0,0,.8), 0 1px 0 #000;
+			box-shadow:0 1px 0 rgba(255,255,255,.03), inset 0 -1px 0 rgba(0,0,0,.5);
+			padding:0 0 25px 0;
+			margin: 0 0 24px 0;
+			}
+			
+			.archived-news .arnews-head h1 {
+			font-family: 'Ropa Sans', sans-serif;
+			font-size:24px;
+			padding:0 0 2px 0;
+			color:#766e64;
+			}
+		
+		.arnews-cont {
+			color:#71655a;
+			font-size:13px;
+			line-height:150%;
+			text-shadow: 0 0 4px rgba(0,0,0,.8), 0 1px 0 #000;
+			}
+			
+			.arnews-cont img {
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				box-shadow: 0 0 6px rgba(0,0,0,.5);
+				}
+			
+				.arnews-cont img.float-left-img {
+				float:left;
+				clear:both;
+				margin: 15px 20px 20px 0;
+				width:auto; height:auto;
+				}
+				.arnews-cont img.normal-img {
+				width:100%; height:auto;
+				margin: 20px 0 20px 0;
+				}
+				.arnews-cont img.float-right-img {
+				float:right;
+				clear:both;
+				margin: 15px 0px 20px 20px;
+				width:auto; height:auto;
+				}
+				
+			/* List Style */
+			.arnews-cont ul.list-c, .arnews-cont ul.list-c li {
+				list-style:circle inside;
+				}
+				.arnews-cont ul.list-c { padding:0 0 0 20px; color:#5c4626;}
+				.arnews-cont ul.list-c li span { color:#938980;}
+				
+			.arnews-cont ol.list-o, .arnews-cont ol.list-o li {
+				list-style:decimal inside;
+				}
+				.arnews-cont ol.list-o { padding:0 0 0 20px; color:#5c4626; }
+				.arnews-cont ol.list-o li span { color:#938980;}
+				
+			.arnews-cont a { text-decoration:underline; color:#978c83;}
+			.arnews-cont a:hover { text-decoration:none; color:#b07e39;}
+				
+		.newer-news-btn, .older-news-btn {
+		display:block;
+		float:right;
+		padding:14px 24px;
+		background:rgba(0,0,0,.4);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		box-shadow:inset 0 0 0 1px #0e0e0d, inset 0 0 8px rgba(255,255,255,.04), inset 0 0 3px rgba(255,255,255,.02), inset 0 2px 0 rgba(255,255,255,.05),0 0 0 1px rgba(255,255,255,.02), 0 0 5px rgba(0,0,0,.3);
+		text-shadow:0 0 4px #000;
+		text-transform: uppercase;
+		}
+		
+		.newer-news-btn {
+			float:left;
+			margin: 30px 0 0 75px;
+			}
+		.older-news-btn {
+			float:right;
+			margin: 30px 75px 0 0;
+			}
+		
+		.newer-news-btn:hover, .older-news-btn:hover {background:rgba(0,0,0,.6);}
+
+
+		* a {
+		transition:color 0.5s ease-out;  
+		-moz-transition:color 0.5s ease-out; 
+		-webkit-transition:color 0.5s ease-out;  
+		-o-transition:color 0.5s ease-out; 
+		}
+		
+		/* Till the DAMN browsers hire normal devs... :@
+		* input {
+		transition:box-shadow 1s;  
+		-moz-transition:box-shadow 1s; 
+		-webkit-transition:box-shadow 1s;  
+		-o-transition:box-shadow 1s; 
+		}
+		/*

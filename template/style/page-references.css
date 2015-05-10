@@ -1,0 +1,102 @@
+/* Partners */
+
+.references-wide {
+	width:773px;
+	margin:27px 0 0 0;
+	padding:30px 35px 30px 35px
+}
+
+.partners {padding: 50px 35px 10px 35px;}
+
+.partner-row {
+	position: relative;
+	display: block;
+	width:739px; height:84px;
+	background:rgba(63,58,51,.17);
+	box-shadow:inset 0 0 0 1px rgba(255,255,204,.01), 0 0 12px rgba(0,0,0,.3), 0 1px 2px rgba(0,0,0,.4);
+	margin:0 auto 30px auto;
+	opacity:.5;
+	transition:all 500ms;
+	-moz-transition:all 500ms;
+	-webkit-transition:all 500ms;
+	-o-transition:all 500ms;
+	}
+	.partner-row:hover { opacity:1;}
+	.partner-row div.site-background-image {
+		width:auto; height:84px;
+		min-width:375px;
+		position:absolute;
+		z-index:1;
+		left:0; top:0;
+		display:block;
+		float: left;
+		}
+	
+	.partner-row div.row-content {
+		width:400px; height:84px;
+		float:right;
+		}
+		
+		div.row-content .site-details {
+			width:250px; height:72px;
+			float:right;
+			text-align:right;
+			text-shadow:1px 1px 1px rgba(0,0,0,.3), 0 0 6px rgba(0,0,0,.4);
+			background:url(images/misc/part-row-sep.png) no-repeat right;
+			margin:5px 0 0 0;
+			}
+			
+			div.row-content .site-details h1 {
+				font-family: guatami;
+				font-size:19px;
+				font-weight:bold;
+				text-transform:uppercase;
+				letter-spacing:-1px;
+				color:#a4936d;
+				line-height:120%;
+				margin:17px 28px 0 0;
+				}
+			div.row-content .site-details h2 {
+				font-size:14px;
+				letter-spacing:0;
+				color:#49423c;
+				left:2px;
+				margin:0 28px 0 0;
+				}
+		
+		div.row-content a {
+			display:block;
+			float:right;
+			width:62px; height:32px;
+			background-image:url(images/misc/link-icon.png);
+			background-color:transparent;
+			background-position:0 0;
+			margin:25px 20px 0 20px;
+			}
+			div.row-content a i { display:none;}
+			
+			div.row-content a:hover {
+				background-position:-62px 0;
+				}
+				
+				
+				
+	/* IMAGES 
+	------------------------------------------------------------------------------*/
+	
+	.partner-row.ac-web div.site-background-image {background:url(images/partners/ac-web.jpg) no-repeat;}
+	.partner-row.d3scene div.site-background-image {background:url(images/partners/d3scene.jpg) no-repeat; width:413px !important;}
+	.partner-row.elitepvpers div.site-background-image {background:url(images/partners/elitepvpers.jpg) no-repeat; width:413px !important;}
+	.partner-row.mmorpg-core div.site-background-image {background:url(images/partners/mmorpg-core.jpg) no-repeat -1px; width:413px !important;}
+	.partner-row.mmobase div.site-background-image {background:url(images/partners/mmobase.jpg) no-repeat; width:413px !important;}
+	.partner-row.wow-studio div.site-background-image {background:url(images/partners/wow-studio.jpg) no-repeat; width:413px !important;}
+	.partner-row.ingamers div.site-background-image {background:url(images/partners/ingamers.jpg) no-repeat; width:413px !important;}
+	.partner-row.deathsoft div.site-background-image {background:url(images/partners/deathsoft.jpg) no-repeat; width:413px !important;}
+	
+	
+	
+	
+	
+			
+			
+

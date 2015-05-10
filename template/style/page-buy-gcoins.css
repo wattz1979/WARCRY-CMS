@@ -1,0 +1,98 @@
+	/* Buy Coins */
+	.buy-coins {
+		padding:30px;
+		}
+		
+		.buy-coins .title {
+		font-family: 'Ropa Sans', sans-serif;
+		font-size:15px;
+		color:#9d9687;
+		text-shadow: 0 2px 1px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,.2);
+		display:block;
+		margin:0 0 10px 0;
+		}
+		
+	.buy-coins .container-left {
+		width:auto;
+		float:left;
+		}
+		
+		.buy-coins .payment-method {
+		width:36%; height:140px;
+		padding:25px 0 0 10px;
+		box-shadow:1px 0 0 rgba(0,0,0,.7),  2px 0 0 rgba(255,255,255,.03);
+		}	
+		
+		.buy-coins .coins-number {
+			width:24%; height:155px;
+			padding: 10px 0 0 0;
+			box-shadow:1px 0 0 rgba(0,0,0,.7),  2px 0 0 rgba(255,255,255,.03);
+			}
+			.buy-coins .coins-number ul { list-style: none;}
+			.buy-coins .coins-number ul li {}
+			.buy-coins .coins-number ul li a {
+				width:49px; height:26px;
+				display:block;
+				background-image:url(images/misc/ctr-arrows.png);
+				background-color:transparent;
+				}
+			
+			.buy-coins .coins-number ul li#onemore-a a {background-position:0 -26px; margin:0 0 5px 0;}
+			.buy-coins .coins-number ul li#oneless-a a {background-position:0 0; margin:5px 0 0 0;}
+			
+			.buy-coins .coins-number ul li#onemore-a a:hover {background-position:-49px -26px;}
+			.buy-coins .coins-number ul li#oneless-a a:hover {background-position:-49px 0;}
+		
+		
+		.buy-coins .purchase {
+			width:32% !important; height:150px;
+			padding: 15px 0 0 5%;
+			}
+			
+			.buy-coins .purchase input[type='submit'] { margin:0 0 0 1px;}
+			
+		  	.coin-money-price {
+				min-width:150px; height:36px;
+				padding:14px 15px 14px 15px;
+				color:#666258;
+				font-weight: bold;
+				}
+				.coin-money-price span {
+				font-size:32px;
+				letter-spacing:-1px;
+				padding: 0 4px 0 4px;
+				line-height:0;
+				top:6px;
+				color:#726b5a;
+				font-family:Tahoma, Geneva, sans-serif;
+				font-weight:normal;
+				vertical-align: top;
+				}
+			.coin-money-price p {
+				display:block;
+				float:left;
+				width:121px !important;
+				margin:5px 0 0 8px !important;
+				color:#59544a !important;
+				}
+				
+			.coin-money-price div {
+				display:block;
+				float:right;
+				width:auto; height:30px;
+				margin:12px 0 0 0;
+				}
+				
+				
+			.purchase p {
+				color:#363632;
+				font-size:11px;
+				margin:5px 0 13px 0;
+				text-shadow:0 0 5px rgba(0,0,0,.5), 0 1px 1px rgba(0,0,0,.5);
+				width:240px;
+				}
+	
+	
+	
+	.payment_methods {
+		}

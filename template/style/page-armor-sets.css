@@ -1,0 +1,152 @@
+/* ARMOR SETS 
+	---------------------------------------------------------*/
+	.armor-sets {}
+	
+		.armor-sets-page-msg {
+			padding:50px 0 0 0;
+			font-size:14px;
+			color:#69655d;
+			text-shadow:0 0 6px rgba(0,0,0,.8), 0 1px 1px rgba(0,0,0,.8);
+			line-height:170%;
+			}
+	
+	.displayed-armor-sets {
+		width:465px;
+		float:left;
+		margin:24px 0 0 76px;
+		}
+	
+		ul.armor-set {
+			width:465px; height:52px;
+			padding:0;
+			overflow:hidden;
+			transition: height ease-in-out 300ms;
+			-webkit-transition: height ease-in-out 300ms;
+			-moz-transition: height ease-in-out 300ms;
+			-o-transition: height ease-in-out 300ms;
+			}
+			
+			ul.armor-set li.set-head {
+			display:block;
+			height:37px;
+			text-align:left;
+			margin: 0;
+			padding:9px 0 0 12px;
+			}
+			
+			li.set-head div#info {
+				width:325px;
+				height:37px;
+				float:left;
+				}
+				li.set-head div#info #set-name {
+				font-size:13px;
+				font-weight: bold;
+				color:#675d54;
+				text-shadow:0 0 5px rgba(0,0,0,.7);
+				padding: 0 0 0 1px;
+				}
+				li.set-head div#info #set-info {
+				font-size:11px;
+				font-style:italic;
+				color:#3f3d3b;
+				text-shadow:0 0 5px rgba(0,0,0,.7), 0 1px 1px rgba(0,0,0,.8);
+				display:block;
+				padding:2px 0 0 0;
+				}
+				
+				li.set-head div#price {
+				width:85px; height:34px;
+				float:left;
+				background:url(images/misc/sep-armor-row.png) no-repeat right;
+				padding:3px 0 0 0;
+				}
+				li.set-head div#price p {
+					font-size:26px;
+					display:block;
+					float:left;
+					text-shadow:0 0 5px rgba(0,0,0,.7), 0 1px 1px rgba(0,0,0,.8);
+					color:#ad8029;
+					}
+					li.set-head div#price span {
+					font-size:9px;
+					text-transform:uppercase;
+					display:block;
+					float:left;
+					width:50px;
+					padding:3px 0 0 3px;
+					color:#54504c;
+					font-style:italic;
+					text-shadow:0 0 5px rgba(0,0,0,.7), 0 1px 1px rgba(0,0,0,.8);
+					}
+				
+				li.set-head div#arrow {
+				display:block;
+				width:15px; height:10px;
+				background:url(images/misc/select-controll-banners.png) 0 0 no-repeat;
+				float:right;
+				margin:14px 15px 0 0;
+				}
+				
+		/* IF active */
+		ul.armor-set-active {
+			height:111px;
+			box-shadow: 
+					0 0 4px rgba(0,0,0,.6), 0 1px 1px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.015), 
+					inset 0 1px 0 rgba(255,255,255,.05), 0 0 28px rgba(255,235,165,.1), 0 0 2px 1px #000;
+			}
+			ul.armor-set-active li.set-head div#arrow {background:url(images/misc/select-controll-banners.png) 0 -11px no-repeat;}
+		
+		ul.armor-set li.armor-set-items {
+			width:451px; height:0px;
+			background:rgba(0,0,0,.3);
+			margin:10px 0 0 0;
+			border-radius:3px;
+			box-shadow:inset 0 0 8px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.03);
+			transition: height ease-in-out 300ms;
+			-webkit-transition: height ease-in-out 300ms;
+			-moz-transition: height ease-in-out 300ms;
+			-o-transition: height ease-in-out 300ms;
+			overflow:hidden;
+			}
+			
+		/* Armor set items if the container is active */
+		ul.armor-set-active li.armor-set-items {
+			width:451px; height:48px;
+			background:rgba(0,0,0,.3);
+			margin:10px 0 0 0;
+			border-radius:3px;
+			box-shadow:inset 0 0 8px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.03);
+			}
+			
+			li.armor-set-items a {
+				display:block;
+				width:24px; height:24px;
+				float:left;
+				margin:11px 0 0 11px;
+				border-radius:2px;
+				background-size:100%;
+				border: solid 1px #999;
+				box-shadow:inset 0 0 10px 2px #000, 0 0 6px #000, inset 0 0 0 1px #000;
+				}
+		/* HOVER */
+		ul.armor-set:hover {
+			height:111px;
+			}
+			
+			ul.armor-set:hover li.armor-set-items {
+			height:48px;
+			}
+			ul.armor-set:hover li.set-head div#arrow {
+			background:url(images/misc/select-controll-banners.png) 0 -11px no-repeat;
+			}
+		.pagination-container { height: 35px; }
+		
+		.armor-set-prepurchase-info {
+			width:345px;
+			float:right;
+			margin:10px 76px 0 0;
+			color:#69655d;
+			text-shadow:0 0 6px rgba(0,0,0,.8), 0 1px 1px rgba(0,0,0,.8);
+			}
+			.armor-set-prepurchase-info b { font-size:13px; color:#928c83;}

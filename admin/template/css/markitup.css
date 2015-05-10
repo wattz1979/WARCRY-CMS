@@ -1,0 +1,311 @@
+/* -------------------------------------------------------------------
+// markItUp! Universal MarkUp Engine, JQuery plugin
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
+.markItUp * {
+	margin:0px; padding:0px;
+	outline:none;
+}
+.markItUp a:link,
+.markItUp a:visited {
+	color:#000;
+	text-decoration:none;
+}
+.markItUp  {
+	margin:5px 0 5px 0;
+}
+.markItUpContainer  {
+	font:11px Verdana, Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+.markItUpEditor {
+	font:12px 'Courier New', Courier, monospace;
+	padding:5px 5px 5px 5px;
+	height:320px;
+	width: 100%;
+	clear:both;
+	line-height:18px;
+	overflow:auto;
+	margin: 0 !important;
+}
+.markItUp-small {
+	height: 115px !important;
+}
+.markItUpPreviewFrame	{
+	overflow:auto;
+	background-color:#FFFFFF;
+	border:1px solid #3C769D;
+	width:99.9%;
+	height:300px;
+	margin:5px 0;
+}
+.markItUpFooter {
+	width:100%;
+	cursor:n-resize;
+}
+.markItUpResizeHandle {
+	overflow:hidden;
+	width:22px; height:5px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../img/markitup/handle.png);
+	cursor:n-resize;
+}
+/***************************************************************************************/
+/* first row of buttons */
+.markItUpHeader ul {
+	margin: 0 !important;
+}
+.markItUpHeader ul li	{
+	list-style:none;
+	float:left;
+	position:relative;
+}
+.markItUpHeader ul li ul{
+	display:none;
+}
+.markItUpHeader ul li:hover > ul{
+	display:block;
+}
+.markItUpHeader ul .markItUpDropMenu {
+	background:transparent url(../img/markitup/menu.png) no-repeat 115% 50%;
+	margin-right: 5px;
+}
+.markItUpHeader ul .markItUpDropMenu li {
+	margin-right:0px;
+}
+.markItUpHeader ul .markItUpSeparator {
+	margin:0 10px;
+	width:1px;
+	height:16px;
+	overflow:hidden;
+	background-color:#CCC;
+}
+.markItUpHeader ul ul .markItUpSeparator {
+	width:auto; height:1px;
+	margin:0px;
+}
+/* next rows of buttons */
+.markItUpHeader ul ul {
+	display:none;
+	position:absolute;
+	top:18px; left:0px;	
+	background:#F5F5F5;
+	border:1px solid #3C769D;
+	height:inherit;
+	margin: 0 !important;
+}
+.markItUpHeader ul ul li {
+	float:none;
+	border-bottom:1px solid #3C769D;
+}
+.markItUpHeader ul ul .markItUpDropMenu {
+	background:#F5F5F5 url(../img/markitup/submenu.png) no-repeat 100% 50%;
+}
+/* next rows of buttons */
+.markItUpHeader ul ul ul {
+	position:absolute;
+	top:-1px; left:150px;
+}
+.markItUpHeader ul ul ul li {
+	float:none;
+}
+.markItUpHeader ul a {
+	display:block;
+	width:16px; height:16px;
+	text-indent:-10000px;
+	background-repeat:no-repeat;
+	padding:3px;
+	margin:0px;
+}
+.markItUpHeader ul ul a {
+	display:block;
+	padding-left:0px;
+	text-indent:0;
+	width:120px; 
+	padding:5px 5px 5px 25px;
+	background-position:2px 50%;
+}
+.markItUpHeader ul ul a:hover  {
+	color:#FFF;
+	background-color:#3C769D;
+}
+/***************************************************************************************/
+
+/* -------------------------------------------------------------------
+// Normal Template
+// ------------------------------------------------------------------*/
+.markItUpNormal .markItUp .markItUpButton1 a	{
+	background-image:url(../img/markitup/bold.png);
+}
+.markItUpNormal .markItUp .markItUpButton2 a	{
+	background-image:url(../img/markitup/italic.png);
+}
+.markItUpNormal .markItUp .markItUpButton3 a	{
+	background-image:url(../img/markitup/underline.png);
+}
+
+.markItUpNormal .markItUp .markItUpButton4 a	{
+	background-image:url(../img/markitup/picture.png);
+}
+.markItUpNormal .markItUp .markItUpButton5 a	{
+	background-image:url(../img/markitup/link.png);
+}
+
+.markItUpNormal .markItUp .markItUpButton6 a {
+	background-image:url(../img/markitup/colors.png);
+}
+	.markItUpNormal .markItUp .markItUpButton6 ul {
+		width:81px;
+		padding:1px;	
+	}
+	.markItUpNormal .markItUp .markItUpButton6  li {
+		border:1px solid white;
+		width:25px;	height:25px;
+		overflow:hidden;
+		padding:0px; margin:0px;
+		float:left;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 ul a {
+		width:25px;	height:25px;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 ul a:hover {
+		background-color:none;
+	}
+	
+	.markItUpNormal .markItUp .markItUpButton6 .col1-1 a {
+		background:yellow;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 .col1-2 a {
+		background:orange;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 .col1-3 a {
+		background:red;
+	}
+	
+	.markItUpNormal .markItUp .markItUpButton6 .col2-1 a {
+		background:blue;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 .col2-2 a {
+		background:purple;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 .col2-3 a {
+		background:green;
+	}
+	
+	.markItUpNormal .markItUp .markItUpButton6 .col3-1 a {
+		background:white;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 .col3-2 a {
+		background:gray;
+	}
+	.markItUpNormal .markItUp .markItUpButton6 .col3-3 a {
+		background:black;
+	}
+	
+.markItUpNormal .markItUp .markItUpButton7 a	{
+	background-image:url(../img/markitup/fonts.png);
+}
+.markItUpNormal .markItUp .markItUpButton8 a	{
+	background-image:url(../img/markitup/list-bullet.png);
+}
+.markItUpNormal .markItUp .markItUpButton9 a	{
+	background-image:url(../img/markitup/list-numeric.png);
+}
+.markItUpNormal .markItUp .markItUpButton10 a	{
+	background-image:url(../img/markitup/list-item.png);
+}
+
+.markItUpNormal .markItUp .markItUpButton11 a	{
+	background-image:url(../img/markitup/quotes.png);
+}
+.markItUpNormal .markItUp .markItUpButton12 a	{
+	background-image:url(../img/markitup/code.png);
+}
+	
+.markItUpNormal .markItUp .markItUpButton13 a	{
+	background-image:url(../img/markitup/clean.png);
+}
+.markItUpNormal .markItUp .preview a {
+	background-image:url(../img/markitup/preview.png);
+}
+
+/* -------------------------------------------------------------------
+// Short Template
+// ------------------------------------------------------------------*/
+.markItUpShort .markItUp .markItUpButton1 a	{
+	background-image:url(../img/markitup/bold.png);
+}
+.markItUpShort .markItUp .markItUpButton2 a	{
+	background-image:url(../img/markitup/italic.png);
+}
+.markItUpShort .markItUp .markItUpButton3 a	{
+	background-image:url(../img/markitup/underline.png);
+}
+
+.markItUpShort .markItUp .markItUpButton4 a	{
+	background-image:url(../img/markitup/link.png);
+}
+
+.markItUpShort .markItUp .markItUpButton5 a {
+	background-image:url(../img/markitup/colors.png);
+}
+	.markItUpShort .markItUp .markItUpButton5 ul {
+		width:81px;
+		padding:1px;	
+	}
+	.markItUpShort .markItUp .markItUpButton5  li {
+		border:1px solid white;
+		width:25px;	height:25px;
+		overflow:hidden;
+		padding:0px; margin:0px;
+		float:left;
+	}
+	.markItUpShort .markItUp .markItUpButton5 ul a {
+		width:25px;	height:25px;
+	}
+	.markItUpShort .markItUp .markItUpButton5 ul a:hover {
+		background-color:none;
+	}
+	
+	.markItUpShort .markItUp .markItUpButton5 .col1-1 a {
+		background:yellow;
+	}
+	.markItUpShort .markItUp .markItUpButton5 .col1-2 a {
+		background:orange;
+	}
+	.markItUpShort .markItUp .markItUpButton5 .col1-3 a {
+		background:red;
+	}
+	
+	.markItUpShort .markItUp .markItUpButton5 .col2-1 a {
+		background:blue;
+	}
+	.markItUpShort .markItUp .markItUpButton5 .col2-2 a {
+		background:purple;
+	}
+	.markItUpShort .markItUp .markItUpButton5 .col2-3 a {
+		background:green;
+	}
+	
+	.markItUpShort .markItUp .markItUpButton5 .col3-1 a {
+		background:white;
+	}
+	.markItUpShort .markItUp .markItUpButton5 .col3-2 a {
+		background:gray;
+	}
+	.markItUpShort .markItUp .markItUpButton5 .col3-3 a {
+		background:black;
+	}
+	
+.markItUpShort .markItUp .markItUpButton6 a	{
+	background-image:url(../img/markitup/fonts.png);
+}
+	
+.markItUpShort .markItUp .markItUpButton7 a	{
+	background-image:url(../img/markitup/clean.png);
+}
+.markItUpShort .markItUp .preview a {
+	background-image:url(../img/markitup/preview.png);
+}
+

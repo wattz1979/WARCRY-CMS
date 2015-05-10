@@ -1,0 +1,23 @@
+
+#IndexTextFader {
+	width:717px; height:152px;
+	position:absolute;
+	left:320px; top:155px;
+	z-index:999;
+	}
+	.ForumsTextFader#IndexTextFader {
+	width:717px; height:152px;
+	position:absolute;
+	left:320px; top:120px;
+	z-index:999;
+	}
+	
+#IndexTextFader a {
+	width:717px; height:152px;
+	}
+		
+	/* Images
+	--------------------------------------------------*/
+	
+	#IndexTextFader a#test1 { background:url(images/IndexSlider/test1.png) no-repeat;}
+	#IndexTextFader a#test2 { background:url(images/IndexSlider/test2.png) no-repeat;}

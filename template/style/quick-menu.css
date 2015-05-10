@@ -1,0 +1,91 @@
+	
+		
+		/*
+		-------------------------------------------------------------------------------------------------------
+		 QUICK Account Panel Menu
+		-------------------------------------------------------------------------------------------------------
+		*/
+		
+		
+		.quick-menu {
+			position:absolute;
+			top:27px; left:290px;
+			width:17px; height:25px;
+			background:rgba(102,93,85,.27);
+			border-radius:3px;
+			box-shadow:0 0 28px rgba(0,0,0,.9), 0 0 15px rgba(0,0,0,.5), inset 0 -1px 0 rgba(0,0,0,.3), inset 0 0 0 1px rgba(255,255,0,.03), 0 1px 2px rgba(0,0,0,.4);
+			transition:all 100ms; -moz-transition:all 100ms; -webkit-transition:all 100ms; -o-transition:all 100ms;
+			z-index:9999;
+			}
+			
+			.quick-menu .arrow {
+			display:block;
+			width:17px; height:24px;
+			float:left;
+			background:url(images/misc/quick-menu-arrow.png) no-repeat center;
+			}
+			
+			.quick-menu:hover { width:25px; overflow:visible;}
+			
+		.dropdown-qmenu {
+			display:block;
+			position:absolute;
+			width:1px; height:1px;
+			top:0px; left:18px;
+			background:#2f2d29;
+			overflow: hidden;
+			border-radius: 0 3px 3px 3px;
+			box-shadow: 0 0 6px rgba(0,0,0,.5);
+			transition:all 400ms; -moz-transition:all 400ms; -webkit-transition:all 400ms; -o-transition:all 400ms;
+			opacity:0;
+			}
+			.quick-menu:hover .dropdown-qmenu { width:150px; height:186px; opacity:1;}
+			
+			.dropdown-qmenu li {
+				display:block;
+				box-shadow:inset 0 -1px 0 rgba(0,0,0,.1), inset 0 0 6px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.02);
+				}
+				.dropdown-qmenu li a {
+				display:block;
+				font-size:11px;
+				text-transform:uppercase;
+				font-weight: bold;
+				padding:6px 0 6px 8px;
+				color:#5c5851;
+				text-shadow:0 0 3px rgba(0,0,0,.4), 1px 1px 0 rgba(0,0,0,.1);
+				}
+				.dropdown-qmenu li a:hover {
+				color:#c3914f;
+				background:rgba(0,0,0,.05);
+				}
+				
+			.dropdown-qmenu li#messages-ddm {
+				background:rgba(0,0,0,.1);
+				box-shadow:inset 0 -1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(255,255,255,.02), inset 0 -1px 0 rgba(255,255,255,.1);
+				}
+				.dropdown-qmenu li#messages-ddm a {
+					padding: 8px 0 8px 0;
+					text-transform:none;
+					text-align:center;
+					}
+					.dropdown-qmenu li#messages-ddm a i {color:#4c4943;}
+					.dropdown-qmenu li#messages-ddm a b {color:#767169;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+/* RECRUIT A FRIEND 
+	---------------------------------------------------------*/
+	
+	.recruit-link-holder {
+		width:720px; height:auto;
+		background:rgba(255,255,255,.025);
+		padding:45px 0 55px 0;
+		border-radius:5px;
+		box-shadow:0 0 10px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.04);
+		margin:0 0 35px 0;
+		}
+		.recruit-link-holder h2 {
+			font-size:11px; 
+			text-align:left; 
+			margin:0 0 10px 62px; 
+			font-weight:bold; 
+			color:#3c3b39; 
+			text-shadow:0 1px 2px rgba(0,0,0,.5); 
+			text-transform:uppercase;
+			}
+			
+	.recruit-link {
+		width:600px;
+		}
+		div.email-link {
+			width:580px; height:31px;
+			background:rgba(0,0,0,.4);
+			border-radius:3px;
+			text-align:left;
+			font-size:15px;
+			font-family:"Courier New", Courier, monospace;
+			padding:13px 0 0 18px;
+			color:#56544e;
+			text-shadow:0 1px 1px #000;
+			box-shadow:inset 0 0 3px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.03);
+			}
+			div.email-link input {
+			border: none;
+			background: none;
+			box-shadow: none;
+			text-align:left;
+			font-size:15px;
+			font-family:"Courier New", Courier, monospace;
+			width:530px; height:31px;
+			text-shadow:0 1px 1px #000;
+			margin: -18px 0 0 -13px;
+			}
+		.recruit-link a {
+			display:block;
+			position:absolute;
+			top:3px; right:4px;
+			width:38px; height:38px;
+			background-position: -1px -52px;
+			border-radius:3px;
+			box-shadow:0 0 4px rgba(0,0,0,.3);
+			}
+			.recruit-link a.mouseover {background-position: -40px -52px;}
+			
+		.recruited { padding-bottom: 35px;}
+		
+			ul.active-recruited-members {width:600px; padding:20px 0 0 0; margin:0 0 20px 0;}
+			
+				ul.active-recruited-members li {display:block;}
+				
+				ul.active-recruited-members li h3, ul.active-recruited-members li h4, ul.active-recruited-members li p, ul.active-recruited-members li span 
+				{ display:block; float:left; margin:0; padding:0;}
+				
+				ul.active-recruited-members li {
+					font-size:12px;
+					color:#CCC;
+					text-align:left;
+					width:600px; height:40px;
+					background:rgba(255,255,255,.05);
+					border-radius:3px;
+					box-shadow:0 0 5px rgba(0,0,0,.2), inset 0 -1px 0 rgba(255,255,255,.03);
+					text-shadow:0 1px 1px rgba(0,0,0,.4);
+					margin:0 0 4px 0;
+					}
+					ul.active-recruited-members li h3 { width:150px; font-size:12px; font-weight:bold; margin:0 0 0 12px; padding:12px 0 0 0; color:#618e30;}
+					ul.active-recruited-members li h4 {width:170px; font-size:12px; font-weight:normal; margin:0 0 0 2px; padding:12px 0 0 0; color:#5e5b54;}
+					ul.active-recruited-members li p {width:160px; font-size:12px; font-weight:normal; margin:0 0 0 2px; padding:12px 0 0 1px; color:#5e5b54;}
+					ul.active-recruited-members li span { width:80px; font-size:12px; font-weight:normal; margin:0 0 0 2px; padding:12px 0 0 0; color:#5e5b54;}
+				
+				ul.active-recruited-members li.tab-header {
+					font-size:12px;
+					text-align:left;
+					width:600px; height:25px;
+					background: none;
+					text-shadow:0 1px 0 rgba(0,0,0,.3);
+					box-shadow:none;
+					margin:0;
+					}
+					ul.active-recruited-members li.tab-header h3 { width:150px; font-size:11px; font-weight:normal; padding:0; color:#302f2d; font-weight:bold;}
+					ul.active-recruited-members li.tab-header h4 {width:170px; font-size:11px; font-weight:normal; padding:0; color:#302f2d; font-weight:bold;}
+					ul.active-recruited-members li.tab-header p {width:160px; font-size:11px; font-weight:normal; padding:0; color:#302f2d; font-weight:bold;}
+					ul.active-recruited-members li.tab-header span { width:80px; font-size:11px; font-weight:normal; padding:0; color:#302f2d; font-weight:bold;}
+				
+				ul.active-recruited-members li.arm-title {
+					background:none;
+					border-radius:0;
+					box-shadow:none;
+					height:auto;
+					padding:0 0 10px 0;
+					margin:0 0 9px 0;
+					box-shadow:inset 0 -1px 0 rgba(0,0,0,.25), 0 1px 0 rgba(255,255,255,.03);
+					}
+					ul.active-recruited-members li.arm-title h2 { font-size:14px; color:#908879;}
+				
+				ul.pending-ref {}
+					ul.pending-ref li h3 { color:#848078;}
+					ul.pending-ref li p { width:240px; color:#484640}
+					ul.pending-ref li p b { color:#5f5c55;}
+					
+				
+				div.referal-pending-info {
+					width:600px;
+					}

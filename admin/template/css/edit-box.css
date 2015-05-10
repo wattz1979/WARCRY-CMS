@@ -1,0 +1,20 @@
+.edit-overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	}
+	.edit-container {
+		margin: 0 auto;
+		max-width: 800px;
+		background: #E1E1E1;
+		border: 1px solid #000;
+		padding: 20px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+		box-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+	}

@@ -1,0 +1,48 @@
+/* Account Settings 
+	---------------------------------------------------------*/
+	
+	ul.account-settings {
+		padding:40px 0 20px 0;
+		}
+	
+	ul.account-settings li {}
+		ul.account-settings li a {
+			display:block;
+			width:400px; height:40px;
+			padding:13px 15px 10px 16px;
+			background:rgba(255,255,255,.03) url(images/misc/misc-element.png) no-repeat 375px 5px;
+			background-size:18%;
+			text-align:left;
+			margin:0 0 20px 0;
+			box-shadow:0 0 0 4px rgba(0,0,0,.15), 0 0 15px rgba(0,0,0,.1);
+			font-size:17px;
+			font-family: 'Ropa Sans', sans-serif;
+			font-weight:bold;
+			color:#57534d;
+			text-shadow:0 0 5px rgba(0,0,0,.3), 0 1px 1px rgba(0,0,0,.3);
+			transition:background 0.2s linear, color 0.5s linear;
+			-moz-transition:background 0.2s linear, color 0.5s linear;
+			-webkit-transition:background 0.2s linear, color 0.5s linear;
+			-o-transition:background 0.2s linear, color 0.5s linear;
+			}
+			ul.account-settings li:last-child a {
+				margin-bottom: none;
+			}
+			ul.account-settings li a p {
+			display:block;
+			font-size:12px; 
+			font-family:Arial, Helvetica, sans-serif;
+			color:#3f3c37;
+			font-weight:bold;
+			transition:color 0.3s linear;
+			-moz-transition:color 0.3s linear;
+			-webkit-transition:color 0.3s linear;
+			-o-transition:color 0.3s linear;
+			}
+		
+			ul.account-settings li a:hover {
+			background:rgba(255,255,255,.05);
+			box-shadow:0 0 0 4px rgba(0,0,0,.2), 0 0 20px rgba(0,0,0,.3);
+			color:#bf893e;
+			}
+			ul.account-settings li a:hover p { color:#645f58;}

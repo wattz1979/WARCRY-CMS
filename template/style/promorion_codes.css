@@ -1,0 +1,181 @@
+/* Promotion Codes */
+
+.promotion_codes {
+	width:100%; height:auto; min-height:226px;
+	background:url(images/pcode_bg.png) no-repeat top;
+	}
+	
+	.pcode-top-cont {
+		height: 150px;
+	}
+	
+	.promotion_codes form {
+		display:block;
+		width:295px; height:auto;
+		float:right;
+		margin:58px 95px 0 0;
+		}
+		
+		.promotion_codes form p {
+		font-family:calibri;
+		font-size:11px;
+		color:#53504a;
+		text-shadow:0 1px 1px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,.4), 0 1px 0 rgba(0,0,0,.2);
+		text-align:center;
+		margin:8px 0 0 0;
+		top:30px;
+		}
+		
+		.promotion_codes form h1 {
+			font-family:Calibri;
+			display:block;
+			width:295px; height:30px;
+			font-size:13px;
+			text-align:center;
+			font-weight: normal;
+			text-transform:uppercase;
+			text-shadow:0 1px 1px rgba(0,0,0,.3), 0 0 3px rgba(0,0,0,.2), 0 1px 0 rgba(0,0,0,.15);
+			position:absolute;
+			}
+			.promotion_codes form h1#enter {color:#508937;}
+			.promotion_codes form h1#invalid {color:#a54734;}
+	
+	.promotion_codes form input[type="text"] {
+		width:269px; height:46px;
+		padding:0 13px;
+		background:#10100f;
+		font-size:14px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align:center;
+		box-shadow:inset 0 1px 1px rgba(0,0,0,.5), inset 0 0 4px rgba(0,0,0,.3), 0 0 43px rgba(255,255,255,.05), 0 1px 0 rgba(255,255,255,.04);
+		transition: none !important; -moz-transition: none !important; -webkit-transition:  none !important; -o-transition: none !important;
+		top:30px;
+		}
+		
+		.promotion_codes form input[type="text"]:focus {
+			text-align:left;
+			font-size:25px;
+			color:#7f766c;
+			font-weight:normal;
+			text-shadow:0 0 4px rgba(0,0,0,.6);
+			}
+			
+			input::-webkit-input-placeholder { color:#2e2c29 !important; font-size:14px !important;}
+			input::-moz-placeholder { color:#2e2c29 !important; font-size:14px !important;}
+			input:-ms-input-placeholder { color:#2e2c29 !important; font-size:14px !important;}
+			input:-moz-placeholder { color:#2e2c29 !important; font-size:14px !important;}
+			
+			input:focus::-webkit-input-placeholder { color:#10100f !important; font-size:14px !important;}
+			input:focus::-moz-placeholder { color:#10100f !important; font-size:14px !important;}
+			input:focus:-ms-input-placeholder { color:#10100f !important; font-size:14px !important;}
+			input:focus:-moz-placeholder { color:#10100f !important; font-size:14px !important;}
+			
+			
+	/* Reward Container */
+	
+	.reward_container {
+		width:288px; height:84px;
+		float:right;
+		background:#312d2a;
+		border-radius:5px;
+		margin:66px 30px 0 0;
+		box-shadow:0 0 27px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.3), inset 0 2px 0 rgba(255,255,255,.04);
+		}
+		.reward_container div.arrow {
+			width:10px; height:19px;
+			background:url(images/misc/container_arrow.png) no-repeat;
+			position:absolute;
+			right:-10px; top:33px;
+			}
+		
+	/* COINS REWARD */
+	.reward_container .coins_reward {
+		font-family:calibrib;
+		text-shadow:0 0 5px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.2), 0 1px 0 rgba(0,0,0,.1);
+		text-align:center;
+		margin:20px 0 0 0;
+		}
+		.reward_container .coins_reward h1 {
+			color:#5c584c;
+			font-size:14px;
+			text-transform:uppercase;
+			}
+		.reward_container .coins_reward h2 {
+			color:#857d73;
+			font-size:28px;
+			text-transform:uppercase;
+			margin:-8px 0 0 0;
+			}
+			.reward_container .coins_reward h2 b {color:#a39687;}
+			.reward_container .coins_reward.gold h2 b {color:#c0931b;}
+			
+			.reward_loading {
+				padding: 26px 0 0 0;
+				}
+				.reward_loading span {
+				background: rgba(153,153,153,.5);
+				}
+				.reward_loading p {
+				font-size: 10px; margin-bottom: 3px;
+				}
+	
+	.pcode-chat-select-cont {
+		padding: 20px 0 0 0;
+	}
+	
+	/* Coins Reward */
+	
+	.item_reward {
+		font-family:calibrib;
+		text-shadow:0 0 5px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.2), 0 1px 0 rgba(0,0,0,.1);
+		}
+		.item_reward h1 {
+			display:block;
+			text-align:right;
+			float:right;
+			color:#5c584c;
+			font-size:14px;
+			text-transform:uppercase;
+			line-height: 95%;
+			margin:26px 10px 0 0;
+			}
+		
+		.item_reward .item_ {
+			width:160px; height:30px;
+			float:right;
+			border-radius:4px;
+			background:#2b2825;
+			text-align:left;
+			padding:6px;
+			margin:20px 22px 0 0;
+			}
+			
+			.item_reward .item_ .ico {
+				width:30px; height:30px;
+				border-radius:3px;
+				background-size:100%;
+				box-shadow:inset 0 0 0 1px #9e9989, inset 0 0 5px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,.5);
+				float: left;
+				}
+			
+			.item_reward .item_ h2 {
+				font-size:22px;
+				color:#9e9989;
+				text-transform:uppercase;
+				float:left;
+				margin:-6px 0 0 6px;
+				}
+			.item_reward .item_ h3 {
+				float:left;
+				color:#69635b;
+				font-size:14px;
+				margin:-6px 0 0 6px;
+				}	
+			
+				
+				
+
+
+

@@ -1,0 +1,85 @@
+/* CHANGELOGS */
+	
+	.changelogs {width:914px; padding:0;}
+	
+		.changelogs-cats {
+			margin:0 0 20px 40px;
+			}
+			.changelogs-cats a {
+				display:inline-block;
+				width:auto; height:auto;
+				padding:10px 12px;
+				text-align:left;
+				float:left;
+				border-radius:4px;
+				background:rgba(255,255,255,.04);
+				box-shadow:0 0 16px rgba(0,0,0,.11), inset 0 0 0 1px rgba(255,204,0,.02), inset 0 1px 0 rgba(255,255,255,.05);
+				text-shadow:0 0 4px rgba(0,0,0,.5);
+				margin:0 20px 0 0;
+				font-family: 'Ropa Sans', sans-serif;
+				color:#9c927c;
+				font-size:16px;
+				text-transform:uppercase;
+				transition: all 500ms;-moz-transition: all 500ms;-webkit-transition: all 500ms;-o-transition: all 500ms;
+				opacity:.6;
+				}
+				.changelogs-cats a p {
+					display:block;
+					font-size:12px;
+					font-family:Arial, Helvetica, sans-serif;
+					text-transform:none;
+					color:#464442;
+					}
+					
+			.changelogs-cats a:hover {
+				color:#eebb40;
+				background:rgba(255,255,255,.06);
+				opacity:.8;
+				}
+				.changelogs-cats a:hover p {}
+				
+			.changelogs-cats a.active {
+				background:#203018;
+				box-shadow:0 0 16px rgba(0,0,0,.11), inset 0 0 0 1px rgba(255,204,0,.02), inset 0 1px 0 rgba(255,255,255,.05);
+				color:#ffcf5b;
+				opacity:.9;
+				}
+				.changelogs-cats a.active P { color:#5f615c;}
+				
+			table.changes-list {
+				border-spacing:0px;
+				border-collapse:collapse;
+				text-align:left;
+				width:100%;
+				}
+				
+				table.changes-list tr {padding:8px 0; display:block; border-bottom: dotted 1px #090908;}
+					table.changes-list tr:last-child { border: none;}
+					
+					table.changes-list tr:nth-child(even) {}
+					table.changes-list tr:nth-child(odd) { background:rgba(255,255,255,.01);}
+				
+				table.changes-list tr td {
+					vertical-align:top;
+					color:#42403d;
+					text-shadow:0 0 3px rgba(0,0,0,.5);
+					
+					}
+					table.changes-list tr td.rev { width:62px; padding:0 0 0 9px; border-right: dotted 1px #282623;}
+					table.changes-list tr td.by { width:80px; padding:0 0 0 9px; font-weight:bold; color:#595652; border-right: dotted 1px #282623;}
+					table.changes-list tr td.date { width:95px; padding:0 0 0 9px; border-right: dotted 1px #282623;}
+					table.changes-list tr td.info { padding:0 9px 0 9px; color:#5c5955;}
+				
+				.load-more {
+					width:100%; height:auto;
+					padding:13px 0;
+					background:rgba(0,0,0,.25);
+					box-shadow:inset 0 1px 1px rgba(0,0,0,.5);
+					}
+					.load-more a {
+						display:block;
+						padding:3px;
+						font-family:'Ropa Sans', sans-serif;
+						text-transform:uppercase;
+						text-shadow:0 0 5px rgba(0,0,0,.7), 0 1px 1px rgba(0,0,0,.8);
+						}

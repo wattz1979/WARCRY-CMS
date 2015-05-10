@@ -1,0 +1,340 @@
+/* Select Style SHIT! */
+
+	.js-select {
+	display:block;
+	width:310px; height: 32px;
+	text-align: left;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin:0;
+	color:#6c6c6c;
+	padding:2px 0 0 0;
+	background:rgba(0,0,0,.35);
+	box-shadow:inset 0 0 3px rgba(0,0,0,.2), inset 0 1px 1px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.02);
+	transition: all 300ms;-moz-transition: all 300ms;-webkit-transition: all 300ms;-o-transition: all 300ms;
+	}
+	.js-select .js-select-selected {
+		width: 80%;
+		padding: 8px 0px 0px 8px;
+		display: inline-block;
+	}
+	.js-select .js-select-arrow {
+		display:block;
+		width: 23px;height: 16px;
+		background-image: url(images/misc/select-gold-arrow.png);
+		background-color:transparent;
+		background-position: 0 0;
+		position:absolute;
+		right:5px; top:10px;
+		vertical-align:top;
+		}
+		.js-select .js-select-arrow-active {
+		background-position: 0 -16px;
+		}
+	/* this is the dropdown list */
+	.js-select .js-select-list-container {
+		position: absolute;
+		top: 37px; left: 0px;
+		width: 100%;
+		z-index: 190;
+		background: #262524;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		overflow:hidden;
+		box-shadow:0 0 15px rgba(0,0,0,.6), 0 2px 2px #000, inset 0 0 0 1px rgba(255,255,255,.05);
+	}
+	/* If there is more than 5 options this element will take place as child of the list-container and it's child will be the list */
+	.js-select .js-select-list-scroller {
+		position: relative;
+		width: 100%;
+		height: 135px;
+		overflow: hidden;
+	}
+	.js-select .js-select-list-container-scrollable .js-select-list-scroller {
+		height: 151px;
+	}
+	.js-select .js-select-list-scrollable {
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.js-select .js-select-list {
+		}
+		
+	/* Select list Cntroller */	
+	.js-select .js-select-list-top-controller {
+		width: 99%;
+		height: 16px;
+		top:1px; left:2px;
+		overflow: hidden;
+		background: -moz-linear-gradient(left,  rgba(38,37,36,0) 10%, rgba(30,30,29,1) 50%, rgba(38,37,36,0) 90%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(10%,rgba(38,37,36,0)), color-stop(50%,rgba(30,30,29,1)), color-stop(90%,rgba(38,37,36,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* IE10+ */
+		background: linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00262524', endColorstr='#00262524',GradientType=1 ); /* IE6-9 */
+		}
+		.js-select .js-select-list-bottom-controller {
+		width: 99%;
+		height: 16px;
+		bottom:1px; left:2px;
+		overflow: hidden;
+		background: -moz-linear-gradient(left,  rgba(38,37,36,0) 10%, rgba(30,30,29,1) 50%, rgba(38,37,36,0) 90%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(10%,rgba(38,37,36,0)), color-stop(50%,rgba(30,30,29,1)), color-stop(90%,rgba(38,37,36,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* IE10+ */
+		background: linear-gradient(left,  rgba(38,37,36,0) 10%,rgba(30,30,29,1) 50%,rgba(38,37,36,0) 90%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00262524', endColorstr='#00262524',GradientType=1 ); /* IE6-9 */
+		}
+		.js-select .js-select-list-top-controller p, .js-select .js-select-list-bottom-controller p {
+			display:block;
+			width:15px; height:10px;
+			background-image:url(images/misc/select-controll-banners.png);
+			}
+			.js-select .js-select-list-top-controller p { background-position:0 -10px; top:2px;}
+			.js-select .js-select-list-bottom-controller p { background-position:0 0; margin:2px 0 0 0; top:2px;}
+		
+		.js-select-list-option {
+			padding: 0px 8px 0px 8px;
+			text-align: left;
+			line-height: 27px;
+			height:27px;
+			}
+			.js-select-list-option-selected {
+			background: rgba(255,255,255,0.02);
+			}
+			.js-select-list-option:hover {
+			background: rgba(255,255,255,0.03);
+			box-shadow: 0 0 8px rgba(0,0,0,.1);
+			}
+			/* this is for disabled option */
+			.js-select-list-option-disabled {
+			cursor: default;
+			font-style: italic;
+			color:#9a9a9a;
+			font-weight:bold;
+			padding:5px 0 5px 9px;
+			}
+			.js-select-list-option-disabled:hover {
+			background: none;
+			}
+			
+	form .row select, form .row .js-select {float:right;}
+
+
+   /* SELECT CHARACTER */
+   
+   
+     
+   /* just shit */
+	.buy-coins .payment-method #payment-method-select {
+		display:block;
+		width:243px; height:67px;
+		text-indent:20px;
+		background: rgb(40,40,38); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(40,40,38,1) 0%, rgba(29,29,27,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(40,40,38,1)), color-stop(100%,rgba(29,29,27,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(40,40,38,1) 0%,rgba(29,29,27,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(40,40,38,1) 0%,rgba(29,29,27,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(40,40,38,1) 0%,rgba(29,29,27,1) 100%); /* IE10+ */
+		background: linear-gradient(top,  rgba(40,40,38,1) 0%,rgba(29,29,27,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282826', endColorstr='#1d1d1b',GradientType=0 ); /* IE6-9 */
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		margin:0;
+		box-shadow:inset 0 0 1px rgba(255,255,255,.1), 0 0 1px 1px #121211;
+		color:#6c6c6c;
+		border: none;
+		}
+		
+		#payment-method-select .js-select-list-container {
+			top:70px !important;
+			}
+		#payment-method-select .js-select-arrow {
+			top:28px; right:20px;
+			}
+			#payment-method-select .js-select-list-option {
+			height:35px;
+			padding: 3px 0 0 7px;
+			}
+		
+	/* Buy Coins Text Input */
+	
+	.buy-coins .coins-number ul li input[type='text'] {
+			width:75px; height:81px;
+			padding:0 6px 0 0; margin:0;
+			text-align:center;
+			font-size:50px;
+			font-family: 'Ropa Sans', sans-serif;
+			color:#ffda2c;
+			letter-spacing:-7px;
+			background:url(images/misc/coins-ico.jpg) no-repeat;
+			border: solid 1px #2e2d29;
+			-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+			box-shadow: 0 0 9px #000;
+			text-shadow:0 -1px 0 #fff369, 0 1px 0 #9f6c2b, 0 2px 0 #7b5321, 0 3px 0 #5b3d18, 0 4px 2px #000,0 0 6px #000, 0 0 15px rgba(0,0,0,1), 0 0 15px rgba(0,0,0,1);
+			}
+
+   
+      
+	/* Select Charcater and Levels select */
+	
+	#character-select, #levels-select {
+		width:252px; height:38px;
+		background: -moz-linear-gradient(top,  rgba(41,40,38,0.6) 0%, rgba(29,28,26,0.6) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41,40,38,0.6)), color-stop(100%,rgba(29,28,26,0.6))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(41,40,38,0.6) 0%,rgba(29,28,26,0.6) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(41,40,38,0.6) 0%,rgba(29,28,26,0.6) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(41,40,38,0.6) 0%,rgba(29,28,26,0.6) 100%); /* IE10+ */
+		background: linear-gradient(top,  rgba(41,40,38,0.6) 0%,rgba(29,28,26,0.6) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc292826', endColorstr='#cc1d1c1a',GradientType=0 ); /* IE6-9 */
+		box-shadow:inset 0 0 0 1px rgba(255,255,255,.02), inset 0 1px 0 rgba(255,255,255,.05), 0 0 0 1px rgba(0,0,0,.3), 0 0 7px rgba(0,0,0,.5);
+		padding:0;
+		}
+		
+		#levels-select {
+			width:240px;
+			}
+		
+		#character-select .js-select-arrow, #levels-select .js-select-arrow {
+		background-image:url(images/misc/select-char-arrows.png);
+		width:25px; height:17px;
+		top:11px; right:8px;
+		}
+		#character-select .js-select-arrow-active, #levels-select .js-select-arrow-active { background-position: 0 -17px; top:11px;}
+		
+		.charcater-option {}
+			.character-holder {
+			width: 180px; height:23px;
+			top:1px;
+			vertical-align:middle;
+			}
+			.character-holder .s-class-icon {
+			width:19px; height:19px;
+			background-size:100%;
+			border: solid 1px #774b84;
+			border-radius:3px;
+			box-shadow:inset 0 0 3px 1px #000, 0 0 3px #000,inset 0 0 0 1px rgba(0,0,0,.3);
+			float:left;
+			}
+			.character-holder p {
+			font-weight: bold;
+			font-size:12px;
+			color:#837e70;
+			margin:0;
+			top:-2px;
+			margin:0 0 0 4px;
+			top:-1px; left:6px;
+			text-shadow: 0 0 3px #000, 0 1px 0 #000;
+			line-height:100%;
+			}
+			.character-holder span {
+			font-size:11px;
+			color:rgba(0,0,0,.7);
+			display:block;
+			margin:0 0 0 4px;
+			left:6px;
+			font-weight: bold;
+			text-shadow:0 0 3px rgba(255,255,255,.05), 1px 1px 0 rgba(255,255,255,.03);
+			line-height:100%;
+			}
+		#character-select .js-select-list-container, #levels-select .js-select-list-container {
+			top: 39px; left: 0px;
+			}
+			#character-select .js-select-list-option {
+			height:23px; width:237px !important;
+			margin:4px 0 4px 4px;
+			padding:5px 0 5px 7px;
+			border-radius:4px;
+			}
+			
+			#levels-select .js-select-list-option {
+			height:35px; width:232px !important;
+			margin:4px 0 4px 4px;
+			padding:0 !important;
+			border-radius:4px;
+			}
+			
+			#character-select .js-select-list-option-selected, #levels-select .js-select-list-option-selected {
+			background:rgba(0,0,0,.2);
+			}
+   			
+   			p.select-charcater-selected {
+				font-weight: bold !important;
+				padding:3px 0 0 5px;
+				margin:0;
+				text-shadow:0 0 3px #000;
+				color:#7a7364;
+				}
+				.js-select-list-option p.select-charcater-selected {
+				top:-5px;
+				font-size:11px;
+				color:#7a7875 !important;
+				}
+				.js-select-list-option-selected p.select-charcater-selected {
+				padding:0;
+				top:-3px;
+				}
+				
+			/* LEVELS Option */
+			
+			#levels-select p.choose-level {
+				padding:3px 0 0 2px;
+				text-shadow:0 0 2px rgba(0,0,0,.6), 0 1px 1px rgba(0,0,0,.6);
+				}
+			
+			.choose-level { padding:0; margin:0;}
+			
+			div.level-option {
+				line-height:100%;
+				text-shadow:0 0 3px #000;
+				color:#867d6e;
+				}
+				div.level-option i {
+				font-size:11px;
+				color:#946f34;
+				top:-1px; left:5px;
+				font-family:Verdana, Geneva, sans-serif;
+				}
+				.level-option span {
+				padding:0; margin:0;
+				display:block;
+				height:0px;
+				font-size:10px !important;
+				font-family:Arial, Helvetica, sans-serif;
+				color:#000000;
+				font-weight:bold;
+				text-shadow:0 1px 0 rgba(255,255,255,.05), 0 0 3px rgba(255,255,255,.1);
+				}
+				
+				
+   			.js-select-list-container ul div.level-option {
+				padding:6px 0 0 6px;
+				}
+			.js-select-list-container ul p.choose-level {
+				padding:3px 0 0 0;
+				margin: 0 0 0 9px;
+				font-size:11px;
+				color:#565452;
+				text-shadow:0 0 4px rgba(0,0,0,.5);
+				}
+   
+   
+   #armors-filter-select {
+	   width:200px;
+	   }
+   
+   
+   
+   
+   
+   
+   
+   
+   

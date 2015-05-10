@@ -1,0 +1,19 @@
+.imagelist { list-style: none !important; margin-left: 0 !important; }
+.imagelist li { 
+	float: left; padding: 5px; margin: 0 20px 20px 0; background: #fff; border: 1px solid #ddd; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+	border-radius: 2px; -moz-box-shadow: 1px 1px 2px #eee; -webkit-box-shadow: 1px 1px 2px #eee; box-shadow: 1px 1px 2px #eee; 
+}
+.imagelist li img { display: block; margin-bottom: 10px; }
+.imagelist li span { display: block; text-align: right;}
+.imagelist li span a { vertical-align: middle; text-decoration: none; }
+.imagelist li span a.name { font-weight: bold; float: left; color: #999; }
+.imagelist li span a.name:hover { color: #333; text-decoration: none; }
+.imagelist li span a.edit, .imagelist li span a.view, .imagelist li span a.delete { 
+	display: inline-block; width: 16px; height: 16px; cursor: pointer; margin-left: 5px; vertical-align: middle; opacity: 0.5;
+}
+.imagelist li span a.edit:hover, .imagelist li span a.view:hover, .imagelist li span a.delete:hover { opacity: 1; }
+.imagelist li span a.edit { background: url(../img/icons/editor.png); }
+.imagelist li span a.view { background: url(../img/icons/glass.png); }
+.imagelist li span a.delete { background: url(../img/icons/trash.png); }
+
+.photoEdit { width: 480px; }

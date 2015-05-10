@@ -1,0 +1,15 @@
+/*-------------------------------------------
+PAGE BACKGROUNDS
+-------------------------------------------*/
+	
+.features-bg {
+	width:996px; height:auto; min-height:473px;
+	position:absolute;
+	top:0; left:0;
+	background-repeat:no-repeat;
+	z-index:0;
+	opacity:.7;
+	}
+
+	.features-bg {background-image:url(images/page-backgrounds/houroftwilight.png);}
+

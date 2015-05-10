@@ -1,0 +1,29 @@
+@font-face {
+font-family:calibri;
+src:url(http://www.warcry-wow.com/template/style/fonts/calibri.ttf);
+}
+@font-face {
+  font-family: 'Ropa Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ropa Sans Italic'), local('RopaSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/ropasans/v2/Wprc8_GrCVbQmKc-0NykFIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ropa Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ropa Sans'), local('RopaSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ropasans/v2/QnguTd82yEUxQZygH2gm8D8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+font-family:guatami;
+src:url(http://www.warcry-wow.com/template/style/fonts/gautamib.ttf);
+}
+@font-face {
+font-family:calibrib;
+src:url(http://www.warcry-wow.com/template/style/fonts/calibrib.ttf);
+}
+
+@font-face {
+font-family:arialn;
+src:url(http://www.warcry-wow.com/template/style/fonts/ARIALN.TTF);
+}

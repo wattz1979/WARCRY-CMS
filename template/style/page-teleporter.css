@@ -1,0 +1,311 @@
+	/* TELEPORTER 
+	---------------------------------------------------------*/
+	
+		.tele-back-btn {
+			position:absolute;
+			z-index:9999;
+			width:47px; height:33px;
+			top:15px; right:15px;
+			}
+			.tele-back-btn a {
+			display:block;
+			width:47px; height:33px;
+			background-position:-1px -91px;
+			border-radius:3px;
+			box-shadow:0 0 5px rgba(0,0,0,1);
+			}
+			.tele-back-btn a:hover {background-position:-49px -91px;}
+	
+	.teleporter {}
+	.padding-tele { padding:0; padding:12px 0 12px 0 !important;}
+	
+	.step-two a, .open-northrend, .open-kalimdor, .open-eastern-kingdoms, .open-kalimdor
+	{background-image:url(images/misc/map.png); background-repeat: no-repeat; background-color:transparent;}
+	
+	.teleporter .map-holder {
+		width:820px; height:671px;
+		background:url(images/misc/teleporter-map-1.jpg) no-repeat top, url(images/misc/teleporter-map-2.jpg) no-repeat bottom;
+		border-radius:4px;
+		box-shadow:0 0 15px #000;
+		}
+		.map-holder .TP_loading_cont {
+			width:820px;
+			padding-top:220px;
+			}
+			.map-holder .TP_loading_cont #TP_loading {
+			display: none;
+			}
+	
+		.step-two {}
+				
+		.step-two a.kalimdor {
+			display:block;
+			width:244px; height:348px;
+			background-position: 0 0;
+			position:absolute;
+			top:180px; left:70px;
+			}
+			.step-two a.kalimdor:hover { background-position:-244px 0;}
+			
+		.step-two a.eastern-kingdoms {
+			display:block;
+			width:164px; height:396px;
+			background-position:-488px 0;
+			position:absolute;
+			top:140px; left:540px;
+			}
+			.step-two a.eastern-kingdoms:hover {background-position:-652px 0;}
+			
+		.step-two a.northrend {
+			display:block;
+			width:235px; height:181px;
+			background-position:0 -348px;
+			position:absolute;
+			top:100px; left:300px;
+			}
+			.step-two a.northrend:hover { background-position:-235px -348px;}
+		
+		/* OPEN maps 
+		---------------------------------------------------------*/
+		.open-map-holder {
+			}
+			.open-map-holder .map-title, .open-territory .map-title {
+				position:absolute;
+				top:30px; left:35px;
+				z-index:8;
+				}
+				.open-map-holder .map-title p, .open-territory .map-title p {
+				font-family:Georgia, "Times New Roman", Times, serif;
+				font-size:22px;
+				color:#bdb096;
+				text-shadow:0 0 10px #000;
+				}
+				.open-map-holder .map-title span, .open-territory .map-title span {
+				color:#6b665d;
+				text-shadow:0 0 10px #000;
+				font-style:italic;
+				}
+				
+			.open-northrend {
+				width:448px; height:339px;
+				background-position: 0 -529px;
+				top:165px; left:10px;
+				}
+				
+			.open-kalimdor {
+				width:377px; height:543px;
+				background-position: -488px -396px;
+				top:65px; left:10px;
+				}
+				
+			.open-eastern-kingdoms {
+				width:255px; height:638px;
+				background-position:-865px 0;
+				top:18px; left:10px;
+				}
+	
+	/* TELEPORTER Canvas */
+	
+		.open-northrend canvas, .open-kalimdor canvas, .open-eastern-kingdoms canvas { 
+			position:absolute;
+			opacity:.04;
+			}
+			.open-northrend canvas:hover, .open-kalimdor canvas:hover, .open-eastern-kingdoms canvas:hover {opacity:.08;}
+		
+			.open-northrend .canv-holder { width:418px; height:307px; position:absolute; top:16px; left:16px;}
+			.open-kalimdor .canv-holder { width:344px; height:511px; position:absolute; top:16px; left:16px;}
+			.open-eastern-kingdoms .canv-holder { width:223px; height:603px; position:absolute; top:16px; left:16px;}
+	
+		#ashenvaley { top:158px; left:135px;}
+		#azshara { top:144px; left:256px;}
+		#azuremyst { top:105px; left:8px;}
+		#barrens { top:218px; left:187px;}
+		#bloodmysle { top:61px; left:0;}
+		#darkshore { top:64px; left:139px;}
+		#desolace { top:252px; left:92px;}
+		#durotar { top:206px; left:255px;}
+		#dustwallow-marsh { top:315px; left:227px;}
+		#felwood { top:91px; left:170px;}
+		#feralas { top:318px; left:78px;}
+		#moonglore { top:51px; left:214px; z-index:99;}
+		#mulgore { top:270px; left:151px;}
+		#silithus { top:400px; left:96px;}
+		#stonetalon { top:186px; left:98px;}
+		#tanaris { top:403px; left:207px;}
+		#teldrassil { top:0; left:99px;}
+		#thousand-needles { top:359px; left:182px;}
+		#ungoro { top:401px; left:166px;}
+		#winterspring { top:54px; left:218px;}
+		
+		#crystalsong { top:109px; left:199px;}
+		#stormpeaks { top:0; left:216px;}
+		#zuldrak { top:74px; left:270px;}
+		#grizzlyhills { top:135px; left:281px;}
+		#howlingfjord { top:185px; left:315px;}
+		#borean-tundra { top:160px; left:0;}
+		#dragonblight { top:142px; left:148px;}
+		#icecrown { top:29px; left:84px;}
+		#sholazar-basin { top:92px; left:51px;}
+		#wintersgrap { top:130px; left:121px;}
+		
+		#queldanas { top:0; left:159px;}
+		#alterac_mountains { top:217px; left:56px;}
+		#arathi_highlands { top:261px; left:104px;}
+		#badlands { top:403px; left:117px;}
+		#blasted_lands { top:510px; left:118px;}
+		#burning_steps { top:428px; left:71px;}
+		#deadwind_pass { top:499px; left:103px;}
+		#dun_morough { top:350px; left:18px;}
+		#duskwood { top:495px; left:51px;}
+		#eastern_plaguelands { top:164px; left:122px;}
+		#elwynn_forest { top:446px; left:35px;}
+		#eversong_woods { top:57px; left:142px;}
+		#ghostlands { top:112px; left:147px;}
+		#hillsbrad_foothills { top:247px; left:47px;}
+		#loch_modan { top:360px; left:124px;}
+		#redridge_mountains { top:459px; left:109px;}
+		#searing_gourge { top:401px; left:74px;}
+		#silverpine_forest { top:213px; left:16px;}
+		#stranglethorn_valley { top:525px; left:45px;}
+		#swamps_of_sorrow { top:489px; left:123px;}
+		#the_hinterlands { top:221px; left:103px;}
+		#tirisfal_glades { top:167px; left:0;}
+		#western_plaguelands { top:162px; left:88px;}
+		#westfall { top:484px; left:15px;}
+		#wetlands { top:310px; left:86px;}
+		
+		
+		/* Open teleport */
+		
+		.open-territory {
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width:816px; height:545px;
+			top:2px; left:0px;
+			opacity: 1;
+			}
+			.open-territory .map-title {
+				position:absolute;
+				top:30px; left:35px;
+				z-index:8;
+				}
+				.open-territory .map-title p {
+				font-family:Georgia, "Times New Roman", Times, serif;
+				font-size:22px;
+				color: #e9e0cf;
+				text-shadow:0 0 10px #000, 0 1px 2px rgba(0,0,0,1), 0 0 14px rgba(0,0,0,1), 0 0 4px rgba(0,0,0,.5), 0 0 9px rgba(0,0,0,.5);
+				}
+				.open-territory .map-title span {
+				color: #b9b6ae;
+				text-shadow:0 0 10px #000;
+				font-style:italic;
+				font-weight:bold;
+				text-shadow:0 0 10px #000, 0 1px 2px rgba(0,0,0,1), 0 0 14px rgba(0,0,0,1), 0 0 4px rgba(0,0,0,.5), 0 0 9px rgba(0,0,0,.5);
+				}
+		
+		.open-territory-overlay {
+			z-index:9; 
+			position:absolute; 
+			width:817px; height:668px;
+			top:2px; left:2px;
+			border-radius:5px;
+			background:rgba(0,0,0,.4);
+			}
+		
+		.opan-territory-holder { position:absolute; z-index:10;}
+		.opan-territory-holder canvas { top:0; left:0;}
+		
+		a.teleport-point {
+			position: absolute;
+			z-index: 50;
+			display:block;
+			width:11px; height:11px;
+			background:#bfb6a8;
+			border-radius:8px;
+			box-shadow:0 0 6px 1px rgba(0,0,0,1), 0 0 0 1px rgba(36,14,7,.6), inset 0 0 0 1px rgba(255,255,255,.4);
+			text-indent:-10000px;
+			}
+			a.teleport-point:hover { background:#f4c479;}
+			a.teleport-point.active { background: #0F0;}
+			
+		.territory-name-info {
+			width:300px;
+			position:absolute;
+			bottom:-40px;
+			text-shadow:0 0 10px rgba(0,0,0,1), 1px 2px 3px rgba(0,0,0,.8);
+			}
+			
+			.territory-name-info h1 { font-family: "Times New Roman", Times, serif; font-weight: normal; letter-spacing:1px; color:#bfb6a8;}
+			.territory-name-info p { color:#867f75; font-weight: bold; font-size:13px;}
+			
+	/* Teleporter Tooltips */
+	#TpTooltip {}
+		#TpTooltip .tp-tooltip-inner {
+			background:#918979;
+			border-radius:3px;
+			height:26px;
+			padding:0 10px;
+			box-shadow:0 0 5px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.1);
+			}
+			#TpTooltip .tp-tooltip-inner #arrow {
+				position:absolute;
+				top:9px; left:-4px;
+				width:4px; height:7px;
+				background-position: -69px -9px;
+				}
+			#TpTooltip .tp-tooltip-inner p {
+				padding:5px 0 0 0;
+				color:#eedfb6;
+				font-weight:bold;
+				text-shadow:0 1px 1px rgba(0,0,0,.4), 0 0 4px rgba(0,0,0,.4);
+				letter-spacing:1px;
+				}
+				
+	.complete-tele-form {
+		border-radius:5px;
+		padding:8px 8px 0 8px;
+		}
+		
+		.active-tele-form {
+		}
+	
+		/* Teleporter cooldown */
+		.cooldown-window {
+			position:absolute;
+			width:818px; height:669px;
+			top:1px; left:1px;
+			background:rgba(0,0,0,.85);
+			box-shadow:inset 0 0 35px 10px #000;
+			border-radius:5px;
+			z-index:9999999999;
+			}
+			#text-holder {
+				position:absolute;
+				top:50%; left:50%;
+				margin:-100px 0 0 -125px;
+				width:250px; height:160px;
+				}
+				#text-holder span {
+					display:block;
+					font-family: 'Ropa Sans', sans-serif;
+					margin:0 0 -20px 0;
+					font-size:18px;
+					color:#5b5040;
+					text-shadow:0 0 15px #000, 0 0 25px #000, 0 0 35px #000;
+					}
+				#text-holder h5 {
+					font-size:125px;
+					font-weight:bold;
+					color:#9a876a;
+					text-shadow:0 0 15px #000, 0 0 25px #000, 0 0 35px #000;
+					display:block;
+					}
+					#text-holder h5 span { top:-8px; display:inline-block;font-size:125px;color:#9a876a;}
+				#text-holder p {
+					display:block;
+					font-family: 'Ropa Sans', sans-serif;
+					width:220px;
+					margin:-20px  0 0 0;
+					color:#524b3f;
+					text-shadow:0 0 15px #000, 0 0 25px #000, 0 0 35px #000;
+					}
